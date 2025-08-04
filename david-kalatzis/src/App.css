@@ -1,2 +1,15 @@
 .component-container {
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  @media (min-width: 720px) {
+    padding: 0 48px;
+  }
+  @media (min-width: 1080px) {
+    padding: 0 72px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0 112px;
+  }
 }
