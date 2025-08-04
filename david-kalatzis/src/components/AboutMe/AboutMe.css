@@ -2,5 +2,36 @@
   margin-top: 48px;
   height: 300px;
   width: 100%;
-  background-color: red;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.about-me-picture {
+  width: 300px;
+  height: 100%;
+  background-color: #15161a;
+}
+
+.about-me-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-me-name {
+  font-size: 32px;
+  font-weight: 1000;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.about-me-description {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+.about-me-icons-containers {
+  display: flex;
+  gap: 16px;
 }
