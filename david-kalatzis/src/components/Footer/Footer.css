@@ -1,12 +1,20 @@
 .footer {
-  background-color: red;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  /* Optional styling */
-  background: #333;
+  background: #15161a;
   color: white;
-  text-align: center;
-  padding: 10px 0;
+  height: 140px;
+  display: flex;
+  text-align: start;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-text {
+  color: #fff;
+  margin: 0 20px;
+  font-size: 14px;
+  line-height: 1.5;
 }
