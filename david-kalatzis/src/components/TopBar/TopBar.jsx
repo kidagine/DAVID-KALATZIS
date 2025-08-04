@@ -3,7 +3,9 @@ import "./TopBar.css";
 function TopBar({ isSticky }) {
   return (
     <div className={`top-bar ${isSticky ? "is-sticky" : ""}`}>
-      <div className="top-bar-inner-container">
+      <div
+        className={`top-bar-inner-container  ${isSticky ? "is-sticky" : ""}`}
+      >
         <div className="top-bar-icon">icon</div>
         <div className="top-bar-selector-group">
           <button className="top-bar-selector-button m--active">
