@@ -8,6 +8,7 @@
 .top-bar-inner-container {
   display: flex;
   align-items: center;
+  height: 140px;
   justify-content: space-between;
   padding: 0 15px;
   @media (min-width: 720px) {
@@ -22,7 +23,28 @@
 }
 
 .top-bar-icon {
+  margin-top: 32px;
+  height: 64px;
+  width: 64px;
+  background-color: #fff;
 }
 
 .top-bar-buttons-container {
+  display: flex;
+  gap: 16px;
+}
+
+.top-bar-button {
+  background-color: #15161a;
+  color: #fff;
+  outline: 2px solid #2a2c33;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  &:hover {
+    outline: 2px solid #fff;
+  }
 }
