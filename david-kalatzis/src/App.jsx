@@ -1,16 +1,18 @@
 import "./App.css";
 import Footer from "./components/Footer/Footer";
+import TopBar from "./components/TopBar/TopBar";
 import "./fonts.css";
 
 function App() {
   return (
     <>
       <div className="component-container">
-        <div>hi</div>
+        <TopBar />
       </div>
       <div className="component-container">
-        <Footer />
+        <div className="temp"></div>
       </div>
+      <Footer />
     </>
   );
 }

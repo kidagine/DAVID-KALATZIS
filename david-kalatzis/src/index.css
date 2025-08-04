@@ -16,3 +16,9 @@
 body {
   margin: 0;
 }
+
+button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+}
