@@ -12,9 +12,29 @@
   justify-content: flex-start;
 }
 
+.footer-inner-container {
+  padding: 0 15px;
+  @media (min-width: 720px) {
+    padding: 0 48px;
+  }
+  @media (min-width: 1080px) {
+    padding: 0 72px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0 112px;
+  }
+}
+
 .footer-text {
   color: #fff;
   margin: 0 20px;
   font-size: 14px;
-  line-height: 1.5;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.footer-link {
+  color: #fff;
+  font-weight: 700;
+  line-height: 24px;
 }
