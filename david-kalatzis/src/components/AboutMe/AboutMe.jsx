@@ -1,5 +1,5 @@
 import "./AboutMe.css";
-import { ReactComponent as GitHubIcon } from "../../assets/svgs/GitHub.svg";
+import { ReactComponent as GitHubIcon } from "../../assets/svgs/GitHub.svg?component";
 
 function AboutMe() {
   return (
