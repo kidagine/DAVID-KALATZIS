@@ -11,6 +11,7 @@
   width: 200px;
   height: 200px;
   background-color: #15161a;
+  flex-shrink: 0;
 }
 
 .about-me-info-container {
@@ -23,7 +24,7 @@
 .about-me-name {
   font-size: 32px;
   font-weight: 1000;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
 }
 
@@ -36,7 +37,7 @@
 .about-me-description {
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
 }
 
 .about-me-icons-containers {
