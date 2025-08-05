@@ -9,22 +9,24 @@ function TopBar({ isSticky }) {
       <div className={`top-bar-inner-container ${isSticky ? "is-sticky" : ""}`}>
         <div className="top-bar-icon">icon</div>
         <div className="top-bar-selector-group">
-          <button
-            onClick={() => setSelectedValue(0)}
-            className={`top-bar-selector-button ${
-              selectedValue === 0 ? "m--active" : ""
-            }`}
-          >
-            Personal
-          </button>
-          <button
-            onClick={() => setSelectedValue(1)}
-            className={`top-bar-selector-button ${
-              selectedValue === 1 ? "m--active" : ""
-            }`}
-          >
-            Professional
-          </button>
+          <div className="top-bar-selector-wrapper">
+            <div
+              className="top-bar-selector-indicator"
+              style={{ transform: `translateX(${selectedValue * 100}%)` }}
+            />
+            <button
+              onClick={() => setSelectedValue(0)}
+              className="top-bar-selector-button"
+            >
+              Personal
+            </button>
+            <button
+              onClick={() => setSelectedValue(1)}
+              className="top-bar-selector-button"
+            >
+              Professional
+            </button>
+          </div>
         </div>
         <div className="top-bar-buttons-container">
           <button className="top-bar-button">Contact</button>
