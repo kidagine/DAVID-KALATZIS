@@ -1,5 +1,6 @@
 import "./AboutMe.css";
-import { ReactComponent as GitHubIcon } from "../../assets/svgs/GitHub.svg?component";
+import GithubIcon from "../../assets/svgs/Github.svg?react";
+import LinkedinIcon from "../../assets/svgs/Linkedin.svg?react";
 
 function AboutMe() {
   return (
@@ -14,6 +15,15 @@ function AboutMe() {
             means, with a keen eye for a quality experience to all users.
           </div>
           <div className="about-me-icons-containers">
+            <a target="_blank" href="https://github.com/kidagine">
+              <GithubIcon />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/davidkalatzis/"
+            >
+              <LinkedinIcon />
+            </a>
             {/* <a
               target="_blank"
               href="https://www.linkedin.com/in/davidkalatzis/"
