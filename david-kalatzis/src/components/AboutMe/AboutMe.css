@@ -8,6 +8,7 @@
 }
 
 .about-me-picture {
+  pointer-events: none;
   width: 200px;
   height: 200px;
   border-radius: 16px;
