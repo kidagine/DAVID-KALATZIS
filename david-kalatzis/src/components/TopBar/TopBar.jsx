@@ -22,7 +22,7 @@ function TopBar({ isSticky }) {
                 selectedValue === 0 ? "m--active" : ""
               }`}
             >
-              Personal
+              Pers. Work
             </button>
             <button
               onClick={() => setSelectedValue(1)}
@@ -30,19 +30,26 @@ function TopBar({ isSticky }) {
                 selectedValue === 1 ? "m--active" : ""
               }`}
             >
-              Professional
+              Prof. Work
             </button>
           </div>
         </div>
         <div className="top-bar-buttons-container">
-          <button className="top-bar-button top-bar-button-left">
-            Email Me!
-            <EmailIcon className="top-bar-button-icon" />
-          </button>
-          <button className="top-bar-button top-bar-button-right">
-            CV
-            <ArrowUpRightIcon className="top-bar-button-icon" />
-          </button>
+          <div className={"top-bar-button-shadow"}>
+            <a
+              href="davidkalatzis@gmail.com"
+              className="top-bar-button top-bar-button-left"
+            >
+              Email Me!
+              <EmailIcon className="top-bar-button-icon" />
+            </a>
+          </div>
+          <div className={"top-bar-button-shadow"}>
+            <a className="top-bar-button top-bar-button-right">
+              CV
+              <ArrowUpRightIcon className="top-bar-button-icon" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
