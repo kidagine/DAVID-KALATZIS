@@ -1,5 +1,7 @@
 import "./TopBar.css";
 import { useState } from "react";
+import EmailIcon from "../../assets/svgs/Email.svg?react";
+import ArrowUpRightIcon from "../../assets/svgs/ArrowUpRight.svg?react";
 
 function TopBar({ isSticky }) {
   const [selectedValue, setSelectedValue] = useState(0);
@@ -35,8 +37,12 @@ function TopBar({ isSticky }) {
         <div className="top-bar-buttons-container">
           <button className="top-bar-button top-bar-button-left">
             Contact
+            <EmailIcon className="top-bar-button-icon" />
           </button>
-          <button className="top-bar-button top-bar-button-right">CV</button>
+          <button className="top-bar-button top-bar-button-right">
+            CV
+            <ArrowUpRightIcon className="top-bar-button-icon" />
+          </button>
         </div>
       </div>
     </div>
