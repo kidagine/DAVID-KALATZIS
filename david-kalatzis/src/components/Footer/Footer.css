@@ -9,7 +9,10 @@
   justify-content: flex-start;
 }
 
-.footer-inner-container {
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   padding: 0 15px;
   @media (min-width: 720px) {
     padding: 0 48px;
@@ -33,4 +36,16 @@
   color: var(--white);
   font-weight: 700;
   line-height: 24px;
+}
+
+.footer-up-nav-container {
+  position: relative;
+}
+
+.footer-up-nav {
+  position: absolute;
+  bottom: 80px;
+  background: var(--grey);
+  right: 20px;
+  padding: 30px 30px;
 }
