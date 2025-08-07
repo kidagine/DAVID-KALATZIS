@@ -22,3 +22,13 @@ button {
   display: inline-block;
   cursor: pointer;
 }
+
+::-webkit-scrollbar-thumb {
+  background: #15161a;
+  border-radius: 10px;
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
