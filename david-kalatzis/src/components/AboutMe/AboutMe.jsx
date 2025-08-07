@@ -1,11 +1,12 @@
 import "./AboutMe.css";
 import GithubIcon from "../../assets/svgs/Github.svg?react";
 import LinkedinIcon from "../../assets/svgs/Linkedin.svg?react";
+import ProfileImage from "../../assets/images/Profile.jpg";
 
 function AboutMe() {
   return (
     <div className="about-me">
-      <image className="about-me-picture">picture</image>
+      <img src={ProfileImage} className="about-me-picture" />
       <div className="about-me-info-container">
         <div className="about-me-name">David Kalatzis</div>
         <div className="about-me-description-container">
