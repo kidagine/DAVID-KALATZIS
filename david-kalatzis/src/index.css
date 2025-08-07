@@ -1,5 +1,5 @@
 :root {
-  --black: #15161a;
+  --black: #000;
   --grey: #15161a;
   --white: #fff;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -21,14 +21,4 @@ button {
   all: unset;
   display: inline-block;
   cursor: pointer;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #15161a;
-  border-radius: 10px;
-}
-
-/* Thumb on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #000;
 }
