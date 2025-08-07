@@ -58,7 +58,7 @@
   fill: var(--grey);
   transition: transform 0.3s, fill 0.3s;
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.12);
     fill: var(--black);
   }
 }
