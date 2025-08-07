@@ -48,11 +48,45 @@
   background: var(--grey);
   right: 8px;
   padding: 16px 16px;
+  &:hover .footer-up-icon {
+    -webkit-animation: pulsate-bck 0.8s ease-in-out infinite both;
+    animation: pulsate-bck 0.8s ease-in-out infinite both;
+  }
 }
 
 .footer-up-icon {
+  pointer-events: none;
   width: 32px;
   height: 32px;
   fill: var(--white);
   transition: transform 0.3s, fill 0.3s;
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }

@@ -73,7 +73,7 @@
 
 .top-bar-selector-button {
   z-index: 1;
-  color: #a1a1a1;
+  color: var(--light-grey);
   font-weight: 800;
   text-align: center;
   flex: 1;
