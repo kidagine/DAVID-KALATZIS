@@ -37,7 +37,7 @@ function TopBar({ isSticky }) {
         <div className="top-bar-buttons-container">
           <div className={"top-bar-button-shadow"}>
             <a
-              href="davidkalatzis@gmail.com"
+              href="mailto:davidkalatzis@gmail.com"
               className="top-bar-button top-bar-button-left"
             >
               Email Me!

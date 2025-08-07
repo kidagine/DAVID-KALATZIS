@@ -46,7 +46,7 @@
   position: absolute;
   bottom: 80px;
   background: var(--grey);
-  right: 8px;
+  right: 0;
   padding: 16px 16px;
   &:hover .footer-up-icon {
     -webkit-animation: pulsate-bck 0.8s ease-in-out infinite both;
