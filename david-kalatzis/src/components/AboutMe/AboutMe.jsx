@@ -15,27 +15,20 @@ function AboutMe() {
             means, with a keen eye for a quality experience to all users.
           </div>
           <div className="about-me-icons-containers">
-            <a target="_blank" href="https://github.com/kidagine">
-              <GithubIcon />
+            <a
+              className="about-me-icon-container"
+              target="_blank"
+              href="https://github.com/kidagine"
+            >
+              <GithubIcon className="about-me-icon" />
             </a>
             <a
+              className="about-me-icon-container"
               target="_blank"
               href="https://www.linkedin.com/in/davidkalatzis/"
             >
-              <LinkedinIcon />
+              <LinkedinIcon className="about-me-icon" />
             </a>
-            {/* <a
-              target="_blank"
-              href="https://www.linkedin.com/in/davidkalatzis/"
-            >
-              <GitHubIcon />
-            </a> */}
-            {/* <a
-              target="_blank"
-              href="https://www.linkedin.com/in/davidkalatzis/"
-            >
-              <LinkedinIcon />
-            </a> */}
           </div>
         </div>
       </div>

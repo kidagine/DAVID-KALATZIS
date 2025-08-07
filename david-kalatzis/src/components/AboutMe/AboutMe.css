@@ -45,3 +45,19 @@
   display: flex;
   gap: 16px;
 }
+
+.about-me-icon-container {
+  width: 28px;
+  height: 28px;
+}
+
+.about-me-icon {
+  width: 24px;
+  height: 24px;
+  transform-origin: center center;
+  transition: width 0.3s, height 0.3s;
+  &:hover {
+    width: 28px;
+    height: 28px;
+  }
+}
