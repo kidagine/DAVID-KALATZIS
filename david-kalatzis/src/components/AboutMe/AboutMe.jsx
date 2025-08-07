@@ -10,9 +10,10 @@ function AboutMe() {
         <div className="about-me-name">David Kalatzis</div>
         <div className="about-me-description-container">
           <div className="about-me-description">
-            Unity developer with a degree and a wealth of work experience.
-            Focused on bringing joyful moments through digitally interactive
-            means, with a keen eye for a quality experience to all users.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in.
           </div>
           <div className="about-me-icons-containers">
             <a

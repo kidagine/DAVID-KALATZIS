@@ -36,7 +36,7 @@ function TopBar({ isSticky }) {
         </div>
         <div className="top-bar-buttons-container">
           <button className="top-bar-button top-bar-button-left">
-            Contact
+            Email Me!
             <EmailIcon className="top-bar-button-icon" />
           </button>
           <button className="top-bar-button top-bar-button-right">
