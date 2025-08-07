@@ -10,7 +10,7 @@
 .about-me-picture {
   width: 200px;
   height: 200px;
-  background-color: #15161a;
+  background-color: var(--white);
   flex-shrink: 0;
 }
 
@@ -24,7 +24,7 @@
 .about-me-name {
   font-size: 32px;
   font-weight: 1000;
-  color: #000;
+  color: var(--black);
   text-transform: uppercase;
 }
 
@@ -38,7 +38,7 @@
 .about-me-description {
   font-size: 18px;
   font-weight: 700;
-  color: #000;
+  color: var(--black);
 }
 
 .about-me-icons-containers {
@@ -55,9 +55,10 @@
   width: 24px;
   height: 24px;
   transform-origin: center center;
-  fill: red;
-  transition: transform 0.3s;
+  fill: var(--grey);
+  transition: transform 0.3s, fill 0.3s;
   &:hover {
     transform: scale(1.2);
+    fill: var(--black);
   }
 }

@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
-  background: #15161a;
-  color: white;
+  background: var(--grey);
+  color: var(--white);
   height: 140px;
   display: flex;
   text-align: start;
@@ -23,14 +23,14 @@
 }
 
 .footer-text {
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
 }
 
 .footer-link {
-  color: #fff;
+  color: var(--white);
   font-weight: 700;
   line-height: 24px;
 }
