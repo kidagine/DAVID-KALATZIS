@@ -16,21 +16,27 @@ function TopBar({ isSticky }) {
             />
             <button
               onClick={() => setSelectedValue(0)}
-              className="top-bar-selector-button"
+              className={`top-bar-selector-button ${
+                selectedValue === 0 ? "m--active" : ""
+              }`}
             >
               Personal
             </button>
             <button
               onClick={() => setSelectedValue(1)}
-              className="top-bar-selector-button"
+              className={`top-bar-selector-button ${
+                selectedValue === 1 ? "m--active" : ""
+              }`}
             >
               Professional
             </button>
           </div>
         </div>
         <div className="top-bar-buttons-container">
-          <button className="top-bar-button">Contact</button>
-          <button className="top-bar-button">CV</button>
+          <button className="top-bar-button top-bar-button-left">
+            Contact
+          </button>
+          <button className="top-bar-button top-bar-button-right">CV</button>
         </div>
       </div>
     </div>

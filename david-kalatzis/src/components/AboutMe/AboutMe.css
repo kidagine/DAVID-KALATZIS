@@ -43,7 +43,7 @@
 
 .about-me-icons-containers {
   display: flex;
-  gap: 16px;
+  gap: 12px;
 }
 
 .about-me-icon-container {
@@ -55,9 +55,9 @@
   width: 24px;
   height: 24px;
   transform-origin: center center;
-  transition: width 0.3s, height 0.3s;
+  fill: red;
+  transition: transform 0.3s;
   &:hover {
-    width: 28px;
-    height: 28px;
+    transform: scale(1.2);
   }
 }
