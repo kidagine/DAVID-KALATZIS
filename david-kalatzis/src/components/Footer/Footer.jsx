@@ -1,4 +1,5 @@
 import "./Footer.css";
+import ArrowUpIcon from "../../assets/svgs/ArrowUp.svg?react";
 
 function Footer() {
   const scrollToTop = () => {
@@ -24,7 +25,7 @@ function Footer() {
         </div>
         <div className="footer-up-nav-container">
           <button className="footer-up-nav" onClick={scrollToTop}>
-            Up
+            <ArrowUpIcon className="footer-up-icon" />
           </button>
         </div>
       </div>

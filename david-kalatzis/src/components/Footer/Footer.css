@@ -46,6 +46,13 @@
   position: absolute;
   bottom: 80px;
   background: var(--grey);
-  right: 20px;
-  padding: 30px 30px;
+  right: 8px;
+  padding: 16px 16px;
+}
+
+.footer-up-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--white);
+  transition: transform 0.3s, fill 0.3s;
 }
