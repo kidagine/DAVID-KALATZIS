@@ -110,6 +110,7 @@
 
 .top-bar-selector-button.m--active {
   color: var(--white);
+  cursor: default;
 }
 
 .top-bar-buttons-container {
