@@ -7,14 +7,20 @@
 .top-bar {
   position: relative;
   width: 100%;
-  transition: all 0.3s ease;
+  background-color: transparent;
   z-index: 999;
 }
 
 .top-bar.is-sticky {
   position: fixed;
-  top: 32px;
+  top: 0;
   left: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
 .top-bar-inner-container {
