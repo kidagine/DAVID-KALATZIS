@@ -25,7 +25,6 @@ function Footer() {
         </div>
         <div className="footer-up-nav-container">
           <div className="footer-text">Heyo</div>
-
           <div className="footer-text">Thnx for passing by~</div>
           <button className="footer-up-nav" onClick={scrollToTop}>
             <ArrowUpIcon className="footer-up-icon" />

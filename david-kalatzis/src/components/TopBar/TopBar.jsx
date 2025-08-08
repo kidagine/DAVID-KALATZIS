@@ -2,6 +2,7 @@ import "./TopBar.css";
 import { useState } from "react";
 import EmailIcon from "../../assets/svgs/Email.svg?react";
 import ArrowUpRightIcon from "../../assets/svgs/ArrowUpRight.svg?react";
+import HouseIcon from "../../assets/svgs/House.svg?react";
 
 function TopBar({ isSticky }) {
   const [selectedValue, setSelectedValue] = useState(0);
@@ -9,7 +10,9 @@ function TopBar({ isSticky }) {
   return (
     <div className={`top-bar ${isSticky ? "is-sticky" : ""}`}>
       <div className={`top-bar-inner-container ${isSticky ? "is-sticky" : ""}`}>
-        <div className="top-bar-icon">icon</div>
+        <div className="top-bar-home-container">
+          <HouseIcon className="top-bar-home-icon" />
+        </div>
         <div className="top-bar-selector-group">
           <div className="top-bar-selector-wrapper">
             <div
