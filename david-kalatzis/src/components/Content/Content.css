@@ -1,8 +1,8 @@
 .content-container {
   border-top: 2px solid #d3d3d3;
   border-bottom: 2px solid #d3d3d3;
-  padding: 20px 0px;
-  margin-top: 20px;
+  padding: 32px 0px;
+  margin-top: 32px;
   margin-bottom: 120px;
   column-count: 3;
 }
