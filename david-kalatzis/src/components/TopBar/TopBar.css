@@ -1,5 +1,10 @@
-.top-bar {
+.top-bar-stuck {
   margin-top: 32px;
+  height: 72px;
+  width: 100%;
+}
+
+.top-bar {
   position: relative;
   width: 100%;
   transition: all 0.3s ease;
@@ -8,7 +13,7 @@
 
 .top-bar.is-sticky {
   position: fixed;
-  top: 0;
+  top: 32px;
   left: 0;
 }
 
