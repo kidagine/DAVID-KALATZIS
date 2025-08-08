@@ -20,7 +20,7 @@
     filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.6));
   }
   &:hover .content-image {
-    transform: scale(1.02);
+    transform: scale(1.075);
   }
 }
 
