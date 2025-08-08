@@ -1,12 +1,9 @@
 import "./TopBar.css";
-import { useState } from "react";
 import EmailIcon from "../../assets/svgs/Email.svg?react";
 import ArrowUpRightIcon from "../../assets/svgs/ArrowUpRight.svg?react";
 import HouseIcon from "../../assets/svgs/House.svg?react";
 
-function TopBar({ isSticky }) {
-  const [selectedValue, setSelectedValue] = useState(0);
-
+function TopBar({ isSticky, selectedValue, setSelectedValue }) {
   return (
     <div className={"top-bar-stuck"}>
       <div className={`top-bar ${isSticky ? "is-sticky" : ""}`}>

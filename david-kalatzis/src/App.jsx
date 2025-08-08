@@ -8,10 +8,22 @@ import { useEffect, useRef, useState } from "react";
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
+  const [selectedValue, setSelectedValue] = useState(0);
   const aboutRef = useRef(null);
   const observerRef = useRef(null);
 
-  const images = [
+  const personalImages = [
+    "https://i.pinimg.com/1200x/3e/ff/31/3eff31835905d618fa69adef49923bdf.jpg",
+    "https://i.pinimg.com/736x/20/52/1d/20521ded456bdd1d2b15ca94637a50d9.jpg",
+    "https://i.pinimg.com/1200x/8d/30/01/8d3001a348320c4a64a538c7d1640d21.jpg",
+    "https://i.pinimg.com/736x/30/e3/37/30e3379a1e9f5745d01cd91ff9a968b2.jpg",
+    "https://i.pinimg.com/736x/3f/18/1f/3f181fb1d1e9b5f11a74b9492cbd23c8.jpg",
+    "https://i.pinimg.com/736x/30/22/66/302266806087fa7320f942c66004f2f9.jpg",
+    "https://i.pinimg.com/736x/00/f3/af/00f3af2a44bcef1f1b9dffc8aea1439a.jpg",
+    "https://i.pinimg.com/736x/ab/dc/93/abdc93b33b06bcc57f2d9cb8781e8221.jpg",
+  ];
+
+  const professionalImages = [
     "https://i.pinimg.com/736x/87/60/46/876046238a2fadd46b9556d90bc3e07a.jpg",
     "https://i.pinimg.com/736x/a7/28/be/a728be564049f0cc4425619858fa83f4.jpg",
     "https://i.pinimg.com/736x/0f/0b/51/0f0b514d4e3471edc35ee39669bd5001.jpg",
@@ -46,10 +58,16 @@ function App() {
         <AboutMe />
       </div>
       <div className="component-container">
-        <TopBar isSticky={isSticky} />
+        <TopBar
+          isSticky={isSticky}
+          selectedValue={selectedValue}
+          setSelectedValue={setSelectedValue}
+        />
       </div>
       <div className="component-container">
-        <Content images={images} />
+        <Content
+          images={selectedValue === 1 ? personalImages : professionalImages}
+        />
       </div>
       <Footer />
     </div>
