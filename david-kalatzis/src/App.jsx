@@ -29,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div>
       <div ref={aboutRef} className="component-container">
         <AboutMe />
       </div>
@@ -37,10 +37,10 @@ function App() {
         <TopBar isSticky={isSticky} />
       </div>
       <div className="component-container">
-        <div className="temp"></div>
+        <div className="content-container"></div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

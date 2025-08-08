@@ -22,7 +22,7 @@ function TopBar({ isSticky }) {
                 selectedValue === 0 ? "m--active" : ""
               }`}
             >
-              Pers. Work
+              Professional
             </button>
             <button
               onClick={() => setSelectedValue(1)}
@@ -30,7 +30,15 @@ function TopBar({ isSticky }) {
                 selectedValue === 1 ? "m--active" : ""
               }`}
             >
-              Prof. Work
+              Personal
+            </button>
+            <button
+              onClick={() => setSelectedValue(2)}
+              className={`top-bar-selector-button ${
+                selectedValue === 2 ? "m--active" : ""
+              }`}
+            >
+              About
             </button>
           </div>
         </div>
