@@ -1,5 +1,5 @@
 import "./App.css";
-import AboutMe from "./components/AboutMe/AboutMe";
+import Hero from "./components/Hero/Hero";
 import Content from "./components/Content/Content";
 import Footer from "./components/Footer/Footer";
 import TopBar from "./components/TopBar/TopBar";
@@ -55,7 +55,7 @@ function App() {
   return (
     <div>
       <div ref={aboutRef} className="component-container">
-        <AboutMe />
+        <Hero />
       </div>
       <div className="component-container">
         <TopBar

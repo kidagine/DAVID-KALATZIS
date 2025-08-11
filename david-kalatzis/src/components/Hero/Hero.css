@@ -1,4 +1,4 @@
-.about-me {
+.hero {
   margin-top: 48px;
   height: 200px;
   width: 100%;
@@ -7,7 +7,7 @@
   gap: 32px;
 }
 
-.about-me-picture {
+.hero-picture {
   pointer-events: none;
   width: 200px;
   height: 200px;
@@ -17,14 +17,14 @@
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
 }
 
-.about-me-info-container {
+.hero-info-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
 
-.about-me-name {
+.hero-name {
   font-size: 32px;
   font-weight: 1000;
   color: var(--black);
@@ -34,14 +34,14 @@
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-.about-me-description-container {
+.hero-description-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
   max-width: 800px;
 }
 
-.about-me-description {
+.hero-description {
   font-size: 18px;
   font-weight: 700;
   color: var(--black);
@@ -50,12 +50,12 @@
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-.about-me-icons-containers {
+.hero-icons-containers {
   display: flex;
   gap: 12px;
 }
 
-.about-me-icon-container {
+.hero-icon-container {
   width: auto;
   height: 28px;
   &:hover {
@@ -68,7 +68,7 @@
   }
 }
 
-.about-me-icon {
+.hero-icon {
   pointer-events: none;
   width: 28px;
   height: 28px;

@@ -4,6 +4,13 @@ import ArrowUpRightIcon from "../../assets/svgs/ArrowUpRight.svg?react";
 import HouseIcon from "../../assets/svgs/House.svg?react";
 
 function TopBar({ isSticky, selectedValue, setSelectedValue }) {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 250,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className={"top-bar-stuck"}>
       <div className={`top-bar ${isSticky ? "is-sticky" : ""}`}>
@@ -20,7 +27,10 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
                 style={{ transform: `translateX(${selectedValue * 100}%)` }}
               />
               <button
-                onClick={() => setSelectedValue(0)}
+                onClick={() => {
+                  scrollToTop();
+                  setSelectedValue(0);
+                }}
                 className={`top-bar-selector-button ${
                   selectedValue === 0 ? "m--active" : ""
                 }`}
@@ -28,7 +38,10 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
                 Professional
               </button>
               <button
-                onClick={() => setSelectedValue(1)}
+                onClick={() => {
+                  scrollToTop();
+                  setSelectedValue(1);
+                }}
                 className={`top-bar-selector-button ${
                   selectedValue === 1 ? "m--active" : ""
                 }`}
@@ -36,7 +49,10 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
                 Personal
               </button>
               <button
-                onClick={() => setSelectedValue(2)}
+                onClick={() => {
+                  scrollToTop();
+                  setSelectedValue(2);
+                }}
                 className={`top-bar-selector-button ${
                   selectedValue === 2 ? "m--active" : ""
                 }`}
