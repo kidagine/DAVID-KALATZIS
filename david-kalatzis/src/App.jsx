@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import TopBar from "./components/TopBar/TopBar";
 import "./fonts.css";
 import { useEffect, useRef, useState } from "react";
+import About from "./components/About/About";
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -65,9 +66,15 @@ function App() {
         />
       </div>
       <div className="component-container">
-        <Content
-          images={selectedValue === 1 ? personalImages : professionalImages}
-        />
+        <div className="content-container">
+          {selectedValue === 2 ? (
+            <About />
+          ) : (
+            <Content
+              images={selectedValue === 1 ? personalImages : professionalImages}
+            />
+          )}
+        </div>
       </div>
       <Footer />
     </div>
