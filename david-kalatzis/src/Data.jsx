@@ -15,6 +15,13 @@ export const personalData = [
   },
   {
     image:
+      "https://i.pinimg.com/736x/ab/dc/93/abdc93b33b06bcc57f2d9cb8781e8221.jpg",
+    title: "Open Platformer",
+    date: "Unity | C#",
+    company: "Gummi",
+  },
+  {
+    image:
       "https://i.pinimg.com/1200x/8d/30/01/8d3001a348320c4a64a538c7d1640d21.jpg",
     title: "Game-Jam in 2 days",
     date: "Unity | C#",
