@@ -168,3 +168,17 @@
   width: 24px;
   height: 24px;
 }
+
+.top-bar-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar-item:first-child > div {
+  margin-right: auto;
+}
+
+.top-bar-item:last-child > div {
+  margin-left: auto;
+}
