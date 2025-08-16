@@ -1,5 +1,6 @@
 import "./Content.css";
 import { useEffect, useRef, useState } from "react";
+import HouseIcon from "../../assets/svgs/House.svg?react";
 
 function Content({ images }) {
   const itemRefs = useRef([]);
@@ -55,6 +56,10 @@ function Content({ images }) {
                 <div>{data.date}</div>
               </div>
             </div>
+          </div>
+          <div className="content-learn-more">
+            <div>Learn More</div>
+            <HouseIcon className="content-learn-more-icon" />
           </div>
         </div>
       ))}
