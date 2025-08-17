@@ -1,0 +1,21 @@
+.about-me {
+  color: black;
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-me-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.about-me-description {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
