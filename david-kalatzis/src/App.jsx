@@ -6,7 +6,7 @@ import TopBar from "./components/TopBar/TopBar";
 import "./fonts.css";
 import { useEffect, useRef, useState } from "react";
 import About from "./components/About/About";
-import { personalData, professionalData } from "./Data";
+import { personalData, professionalData } from "./data/Data";
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);

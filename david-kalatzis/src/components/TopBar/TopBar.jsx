@@ -2,6 +2,7 @@ import "./TopBar.css";
 import EmailIcon from "../../assets/svgs/Email.svg?react";
 import ArrowUpRightIcon from "../../assets/svgs/ArrowUpRight.svg?react";
 import HouseIcon from "../../assets/svgs/House.svg?react";
+import { topBarData } from "../../data/TopBarData";
 
 function TopBar({ isSticky, selectedValue, setSelectedValue }) {
   const scrollToTop = () => {
@@ -30,39 +31,20 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
                   className="top-bar-selector-indicator"
                   style={{ transform: `translateX(${selectedValue * 100}%)` }}
                 />
-                <button
-                  onClick={() => {
-                    scrollToTop();
-                    setSelectedValue(0);
-                  }}
-                  className={`top-bar-selector-button ${
-                    selectedValue === 0 ? "m--active" : ""
-                  }`}
-                >
-                  Professional
-                </button>
-                <button
-                  onClick={() => {
-                    scrollToTop();
-                    setSelectedValue(1);
-                  }}
-                  className={`top-bar-selector-button ${
-                    selectedValue === 1 ? "m--active" : ""
-                  }`}
-                >
-                  Personal
-                </button>
-                <button
-                  onClick={() => {
-                    scrollToTop();
-                    setSelectedValue(2);
-                  }}
-                  className={`top-bar-selector-button ${
-                    selectedValue === 2 ? "m--active" : ""
-                  }`}
-                >
-                  About
-                </button>
+                {topBarData.items.map((item, index) => (
+                  <button
+                    key={index}
+                    onClick={() => {
+                      scrollToTop();
+                      setSelectedValue(item.value);
+                    }}
+                    className={`top-bar-selector-button ${
+                      selectedValue === item.value ? "m--active" : ""
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
               </div>
             </div>
           </div>
@@ -74,13 +56,13 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
                   href="mailto:davidkalatzis@gmail.com"
                   className="top-bar-button top-bar-button-left"
                 >
-                  Email Me!
+                  {topBarData.contact}
                   <EmailIcon className="top-bar-button-icon" />
                 </a>
               </div>
               <div className={"top-bar-button-shadow"}>
                 <a className="top-bar-button top-bar-button-right">
-                  CV
+                  {topBarData.cv}
                   <ArrowUpRightIcon className="top-bar-button-icon" />
                 </a>
               </div>
