@@ -1,4 +1,5 @@
 import "./About.css";
+import BasedIn from "../../assets/svgs/BasedIn.svg?react";
 
 function About() {
   return (
@@ -6,11 +7,17 @@ function About() {
       <div className="about-me-section">
         <div className="about-me-top">
           <div className="about-me-based-in">
-            <div className="about-me-title">Based In:</div>
+            <div className="about-me-title-group">
+              {/* <BasedIn className="about-me-icon" /> */}
+              <div className="about-me-title">Based In:</div>
+            </div>
             <div className="about-me-description">Denmark, Vejle</div>
           </div>
           <div className="about-me-education">
-            <div className="about-me-title">Education:</div>
+            <div className="about-me-title-group">
+              {/* <BasedIn className="about-me-icon" /> */}
+              <div className="about-me-title">Education:</div>
+            </div>
             <div className="about-me-description">
               Erhvervsakademi SydVest Software Development
             </div>
@@ -19,27 +26,60 @@ function About() {
 
         <div className="about-me-bottom">
           <div className="about-me-work">
-            <div className="about-me-title">Work Exp:</div>
+            <div className="about-me-title-group">
+              {/* <BasedIn className="about-me-icon" /> */}
+              <div className="about-me-title">Work Exp:</div>
+            </div>
             <div className="about-me-list">
-              <div className="about-me-description">LEGO | 2025</div>
-              <div className="about-me-description">
-                Inner Engine | 2023-2025
+              <div className="about-me-list-item">
+                <div className="about-me-description">
+                  React Developer | LEGO
+                </div>
+                <div className="about-me-description">2025 - Present</div>
               </div>
-              <div className="about-me-description">
-                Ampersand Associates | 2022-2025
+              <div className="about-me-list-item">
+                <div className="about-me-description">
+                  Unity Developer | Inner Engine
+                </div>
+                <div className="about-me-description">2023-2025</div>
               </div>
-              <div className="about-me-description">
-                Undisclosed | 2022-2023
+              <div className="about-me-list-item">
+                <div className="about-me-description">
+                  Unity Developer | Ampersand
+                </div>
+                <div className="about-me-description">2022-2025</div>
               </div>
-              <div className="about-me-description">Oneiros | 2021-2022</div>
-              <div className="about-me-description">
-                Grumsen Development | 2020
+              <div className="about-me-list-item">
+                <div className="about-me-description">
+                  Unity Developer | Undisclosed
+                </div>
+                <div className="about-me-description">2022-2023</div>
               </div>
-              <div className="about-me-description">Amunet | 2020</div>
+              <div className="about-me-list-item">
+                <div className="about-me-description">
+                  React Developer | Grumsen Development
+                </div>
+                <div className="about-me-description">2021</div>
+              </div>
+              <div className="about-me-list-item">
+                <div className="about-me-description">
+                  Unity Developer | Oneiros
+                </div>
+                <div className="about-me-description">2020</div>
+              </div>
+              <div className="about-me-list-item">
+                <div className="about-me-description">
+                  Unreal Developer | Amunet
+                </div>
+                <div className="about-me-description">2020</div>
+              </div>
             </div>
           </div>
           <div className="about-me-tools">
-            <div className="about-me-title">Tools & Languages:</div>
+            <div className="about-me-title-group">
+              {/* <BasedIn className="about-me-icon" /> */}
+              <div className="about-me-title">Tools & Languages:</div>
+            </div>
             <div className="about-me-list">
               <div className="about-me-description">Unity</div>
               <div className="about-me-description">Unreal</div>
