@@ -16,6 +16,18 @@
   gap: 12px;
   padding: 12px;
   box-sizing: border-box;
+  animation: 0.5s fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .about-me-top {
@@ -35,7 +47,9 @@
 }
 
 .about-me-part {
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
   box-sizing: border-box;
   background: linear-gradient(
     124deg,
@@ -57,11 +71,11 @@
 }
 
 .about-me-work {
-  width: 70%;
+  width: 80%;
 }
 
 .about-me-tools {
-  width: 30%;
+  width: 20%;
 }
 
 .about-me-title-group {

@@ -9,7 +9,7 @@ function About() {
           <div className="about-me-based-in about-me-part ">
             <div className="about-me-title-group">
               {/* <BasedIn className="about-me-icon" /> */}
-              <div className="about-me-title">Based In:</div>
+              <div className="about-me-title">Location:</div>
             </div>
             <div className="about-me-description">Denmark, Vejle</div>
           </div>
@@ -28,7 +28,7 @@ function About() {
           <div className="about-me-work about-me-part ">
             <div className="about-me-title-group">
               {/* <BasedIn className="about-me-icon" /> */}
-              <div className="about-me-title">Work Exp:</div>
+              <div className="about-me-title">Work:</div>
             </div>
             <div className="about-me-list">
               <div className="about-me-list-item">
@@ -78,15 +78,30 @@ function About() {
           <div className="about-me-tools about-me-part ">
             <div className="about-me-title-group">
               {/* <BasedIn className="about-me-icon" /> */}
-              <div className="about-me-title">Tools & Languages:</div>
+              <div className="about-me-title">Tools:</div>
             </div>
             <div className="about-me-list">
-              <div className="about-me-description">Unity</div>
-              <div className="about-me-description">Unreal</div>
-              <div className="about-me-description">React</div>
-              <div className="about-me-description">C#</div>
-              <div className="about-me-description">C++</div>
-              <div className="about-me-description">JS/TS</div>
+              <div className="about-me-list-item">
+                <div className="about-me-description">Unity</div>
+              </div>
+              <div className="about-me-list-item">
+                <div className="about-me-description">Unreal</div>
+              </div>
+              <div className="about-me-list-item">
+                <div className="about-me-description">Godot</div>
+              </div>
+              <div className="about-me-list-item">
+                <div className="about-me-description">React</div>
+              </div>
+              <div className="about-me-list-item">
+                <div className="about-me-description">C#</div>
+              </div>
+              <div className="about-me-list-item">
+                <div className="about-me-description">C++</div>
+              </div>
+              <div className="about-me-list-item">
+                <div className="about-me-description">JS/TS</div>
+              </div>
             </div>
           </div>
         </div>
