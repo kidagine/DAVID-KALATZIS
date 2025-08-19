@@ -102,10 +102,16 @@
   border-bottom: 1px solid #636363;
 }
 
+.about-me-list-description {
+  display: flex;
+  flex-direction: row;
+}
+
 .about-me-description {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  color: var(--white);
 }
 
 .about-me-icon {
