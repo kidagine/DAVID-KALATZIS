@@ -6,14 +6,14 @@ function About() {
     <div className="about-me">
       <div className="about-me-section">
         <div className="about-me-top">
-          <div className="about-me-based-in">
+          <div className="about-me-based-in about-me-part ">
             <div className="about-me-title-group">
               {/* <BasedIn className="about-me-icon" /> */}
               <div className="about-me-title">Based In:</div>
             </div>
             <div className="about-me-description">Denmark, Vejle</div>
           </div>
-          <div className="about-me-education">
+          <div className="about-me-education about-me-part ">
             <div className="about-me-title-group">
               {/* <BasedIn className="about-me-icon" /> */}
               <div className="about-me-title">Education:</div>
@@ -25,7 +25,7 @@ function About() {
         </div>
 
         <div className="about-me-bottom">
-          <div className="about-me-work">
+          <div className="about-me-work about-me-part ">
             <div className="about-me-title-group">
               {/* <BasedIn className="about-me-icon" /> */}
               <div className="about-me-title">Work Exp:</div>
@@ -75,7 +75,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="about-me-tools">
+          <div className="about-me-tools about-me-part ">
             <div className="about-me-title-group">
               {/* <BasedIn className="about-me-icon" /> */}
               <div className="about-me-title">Tools & Languages:</div>

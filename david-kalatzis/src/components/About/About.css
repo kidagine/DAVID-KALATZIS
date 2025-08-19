@@ -5,6 +5,7 @@
   padding: 32px 0px;
   margin-top: 32px;
   margin-bottom: 120px;
+  color: #fff;
 }
 
 .about-me-section {
@@ -33,35 +34,33 @@
   gap: 8px;
 }
 
-.about-me-based-in {
+.about-me-part {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
   box-sizing: border-box;
-  background-color: #fff;
+  background: linear-gradient(
+    124deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 14%,
+    rgba(31, 31, 31, 1) 100%
+  );
+
   border-radius: 12px;
   padding: 12px;
+}
+
+.about-me-based-in {
   width: 30%;
 }
 
 .about-me-education {
-  box-sizing: border-box;
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 12px;
   width: 70%;
 }
 
 .about-me-work {
-  box-sizing: border-box;
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 12px;
   width: 70%;
 }
 
 .about-me-tools {
-  box-sizing: border-box;
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 12px;
   width: 30%;
 }
 
@@ -89,6 +88,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom: 1px solid #636363;
 }
 
 .about-me-description {
