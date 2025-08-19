@@ -2,7 +2,7 @@ import "./Content.css";
 import { useEffect, useRef, useState } from "react";
 import ArrowRight from "../../assets/svgs/ArrowRight.svg?react";
 
-function Content({ images }) {
+function Content({ images, onContentClick }) {
   const itemRefs = useRef([]);
   const [visibleItems, setVisibleItems] = useState([]);
 
@@ -42,6 +42,7 @@ function Content({ images }) {
           key={index}
           ref={(el) => (itemRefs.current[index] = el)}
           data-index={index}
+          onClick={() => onContentClick(data)}
         >
           <img
             src={data.image}

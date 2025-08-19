@@ -8,11 +8,15 @@ import { useEffect, useRef, useState } from "react";
 import About from "./components/About/About";
 import { personalData } from "./data/ContentPersonalData";
 import { professionalData } from "./data/ContentProfessionalData";
+import ContentDetails from "./components/ContentDetails/ContentDetails";
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
   const [selectedValue, setSelectedValue] = useState(0);
+  const [selectedContentItem, setSelectedContentItem] = useState(null);
+  const [fadeOutContent, setFadeOutContent] = useState(false);
   const aboutRef = useRef(null);
+  const contentRef = useRef(null);
   const observerRef = useRef(null);
 
   useEffect(() => {
@@ -33,6 +37,18 @@ function App() {
     };
   }, []);
 
+  const handleContentClick = (item) => {
+    setFadeOutContent(true);
+    setTimeout(() => {
+      setSelectedContentItem(item);
+      setFadeOutContent(false);
+      window.scrollTo({
+        top: 250,
+        behavior: "smooth",
+      });
+    }, 400);
+  };
+
   return (
     <div>
       <div ref={aboutRef} className="component-container">
@@ -42,16 +58,26 @@ function App() {
         <TopBar
           isSticky={isSticky}
           selectedValue={selectedValue}
-          setSelectedValue={setSelectedValue}
+          setSelectedValue={(value) => {
+            setSelectedValue(value);
+            setSelectedContentItem(null);
+          }}
         />
       </div>
-      <div className="component-container">
+      <div className="component-container" ref={contentRef}>
         {selectedValue === 2 ? (
           <About />
+        ) : selectedContentItem ? (
+          <ContentDetails data={selectedContentItem} />
         ) : (
-          <div className="content-container">
+          <div
+            className={`content-container ${
+              fadeOutContent ? "fade-out" : "fade-in"
+            }`}
+          >
             <Content
               images={selectedValue === 1 ? personalData : professionalData}
+              onContentClick={handleContentClick}
             />
           </div>
         )}
