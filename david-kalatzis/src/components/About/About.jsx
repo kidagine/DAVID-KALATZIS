@@ -1,5 +1,6 @@
 import "./About.css";
 import BasedIn from "../../assets/svgs/BasedIn.svg?react";
+import { aboutData } from "../../data/AboutData";
 
 function About() {
   return (
@@ -9,17 +10,17 @@ function About() {
           <div className="about-me-based-in about-me-part ">
             <div className="about-me-title-group">
               {/* <BasedIn className="about-me-icon" /> */}
-              <div className="about-me-title">Location:</div>
+              <div className="about-me-title">{aboutData.location}</div>
             </div>
-            <div className="about-me-description">Denmark, Vejle</div>
+            <div className="about-me-description">{aboutData.locationText}</div>
           </div>
           <div className="about-me-education about-me-part ">
             <div className="about-me-title-group">
               {/* <BasedIn className="about-me-icon" /> */}
-              <div className="about-me-title">Education:</div>
+              <div className="about-me-title">{aboutData.education}</div>
             </div>
             <div className="about-me-description">
-              Erhvervsakademi SydVest Software Development
+              {aboutData.educationText}
             </div>
           </div>
         </div>
@@ -28,80 +29,28 @@ function About() {
           <div className="about-me-work about-me-part ">
             <div className="about-me-title-group">
               {/* <BasedIn className="about-me-icon" /> */}
-              <div className="about-me-title">Work:</div>
+              <div className="about-me-title">{aboutData.work}</div>
             </div>
             <div className="about-me-list">
-              <div className="about-me-list-item">
-                <div className="about-me-description">
-                  React Developer | LEGO
+              {aboutData.workItems.map((item, index) => (
+                <div className="about-me-list-item" key={index}>
+                  <div className="about-me-description">{item.title}</div>
+                  <div className="about-me-description">{item.time}</div>
                 </div>
-                <div className="about-me-description">2025 - Present</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">
-                  Unity Developer | Inner Engine
-                </div>
-                <div className="about-me-description">2023-2025</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">
-                  Unity Developer | Ampersand
-                </div>
-                <div className="about-me-description">2022-2025</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">
-                  Unity Developer | Undisclosed
-                </div>
-                <div className="about-me-description">2022-2023</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">
-                  React Developer | Grumsen Development
-                </div>
-                <div className="about-me-description">2021</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">
-                  Unity Developer | Oneiros
-                </div>
-                <div className="about-me-description">2020</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">
-                  Unreal Developer | Amunet
-                </div>
-                <div className="about-me-description">2020</div>
-              </div>
+              ))}
             </div>
           </div>
           <div className="about-me-tools about-me-part ">
             <div className="about-me-title-group">
               {/* <BasedIn className="about-me-icon" /> */}
-              <div className="about-me-title">Tools:</div>
+              <div className="about-me-title">{aboutData.tools}</div>
             </div>
             <div className="about-me-list">
-              <div className="about-me-list-item">
-                <div className="about-me-description">Unity</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">Unreal</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">Godot</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">React</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">C#</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">C++</div>
-              </div>
-              <div className="about-me-list-item">
-                <div className="about-me-description">JS/TS</div>
-              </div>
+              {aboutData.toolsItems.map((item, index) => (
+                <div className="about-me-list-item" key={index}>
+                  <div className="about-me-description">{item}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

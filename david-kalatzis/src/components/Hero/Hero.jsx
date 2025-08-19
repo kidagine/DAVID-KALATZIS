@@ -16,14 +16,14 @@ function Hero() {
             <a
               className="hero-icon-container"
               target="_blank"
-              href="https://github.com/kidagine"
+              href={heroData.github}
             >
               <GithubIcon className="hero-icon" />
             </a>
             <a
               className="hero-icon-container"
               target="_blank"
-              href="https://www.linkedin.com/in/davidkalatzis/"
+              href={heroData.linkedin}
             >
               <LinkedinIcon className="hero-icon" />
             </a>
