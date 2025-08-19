@@ -1,17 +1,75 @@
 .about-me {
   color: black;
+  border-top: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+  padding: 32px 0px;
+  margin-top: 32px;
+  margin-bottom: 120px;
 }
 
 .about-me-section {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 400px;
+  gap: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: rgb(203, 203, 203);
+}
+
+.about-me-top {
+  display: flex;
+  flex-direction: row;
+  height: 20%;
   gap: 8px;
+}
+
+.about-me-bottom {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  gap: 8px;
+}
+
+.about-me-based-in {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  width: 30%;
+}
+
+.about-me-education {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  width: 70%;
+}
+
+.about-me-work {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  width: 30%;
+}
+
+.about-me-tools {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  width: 70%;
 }
 
 .about-me-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
 .about-me-description {

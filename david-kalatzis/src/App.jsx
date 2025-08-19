@@ -45,15 +45,15 @@ function App() {
         />
       </div>
       <div className="component-container">
-        <div className="content-container">
-          {selectedValue === 2 ? (
-            <About />
-          ) : (
+        {selectedValue === 2 ? (
+          <About />
+        ) : (
+          <div className="content-container">
             <Content
               images={selectedValue === 1 ? personalData : professionalData}
             />
-          )}
-        </div>
+          </div>
+        )}
       </div>
       <Footer />
     </div>
