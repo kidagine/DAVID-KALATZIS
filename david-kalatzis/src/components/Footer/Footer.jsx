@@ -1,5 +1,6 @@
 import "./Footer.css";
 import ArrowUpIcon from "../../assets/svgs/ArrowUp.svg?react";
+import { footerData } from "../../data/FooterData";
 
 function Footer() {
   const scrollToTop = () => {
@@ -13,13 +14,11 @@ function Footer() {
     <div className="footer">
       <div className="footer-container">
         <div className="footer-info-container">
+          <div className="footer-text">{footerData.rights}</div>
           <div className="footer-text">
-            ©2025 David Kalatzis. All Rights Reserved
-          </div>
-          <div className="footer-text">
-            Connection for Business:{" "}
+            {footerData.business}
             <a className="footer-link" href="mailto:davidkalatzis@gmail.com">
-              davidkalatzis@gmail.com
+              {footerData.email}
             </a>
           </div>
         </div>
