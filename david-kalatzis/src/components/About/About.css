@@ -78,7 +78,7 @@
 .about-me-title-group {
   display: flex;
   flex-direction: row;
-  gap: 6px;
+  gap: 8px;
   padding-bottom: 10px;
 }
 
