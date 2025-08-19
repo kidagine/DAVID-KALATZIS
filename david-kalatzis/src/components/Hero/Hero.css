@@ -27,6 +27,7 @@
 .hero-name {
   font-size: 42px;
   font-weight: 900;
+  line-height: 36px;
   color: var(--black);
   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     both;

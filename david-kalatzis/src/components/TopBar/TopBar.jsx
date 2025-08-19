@@ -61,7 +61,7 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
                     selectedValue === 2 ? "m--active" : ""
                   }`}
                 >
-                  Me
+                  About
                 </button>
               </div>
             </div>
