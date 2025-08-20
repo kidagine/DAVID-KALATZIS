@@ -5,6 +5,17 @@ export const professionalData = [
     title: "React Developer",
     date: "2025-2026",
     company: "LEGO",
+    details: [
+      {
+        section: [{ type: "_text", title: "hey", body: "akjdada" }],
+      },
+      {
+        section: [{ type: "_image", url: "hey" }],
+      },
+      {
+        section: [{ type: "_video", url: "hey" }],
+      },
+    ],
   },
   {
     image:
