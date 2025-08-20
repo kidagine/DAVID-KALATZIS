@@ -54,7 +54,7 @@ function Content({ images, onContentClick }) {
               <div>{data.company}</div>
               <div className="content-info-details">
                 <div>{data.title}</div>
-                <div>{data.date}</div>
+                <div>{data.time}</div>
               </div>
             </div>
           </div>

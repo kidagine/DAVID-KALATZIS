@@ -4,6 +4,7 @@ import Education from "../../assets/svgs/Education.svg?react";
 import Work from "../../assets/svgs/Work.svg?react";
 import Tools from "../../assets/svgs/Tools.svg?react";
 import { aboutData } from "../../data/AboutData";
+import { professionalData } from "../../data/ContentProfessionalData";
 
 function About() {
   return (
@@ -35,7 +36,7 @@ function About() {
               <div className="about-me-title">{aboutData.work}</div>
             </div>
             <div className="about-me-list">
-              {aboutData.workItems.map((item, index) => (
+              {professionalData.map((item, index) => (
                 <div className="about-me-list-item" key={index}>
                   <div className="about-me-list-description">
                     <div className="about-me-description">
