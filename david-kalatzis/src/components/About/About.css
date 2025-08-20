@@ -1,11 +1,10 @@
 .about-me {
-  color: black;
   border-top: 2px solid #d3d3d3;
   border-bottom: 2px solid #d3d3d3;
   padding: 32px 0px;
   margin-top: 32px;
   margin-bottom: 120px;
-  color: #fff;
+  color: var(--white);
 }
 
 .about-me-section {
