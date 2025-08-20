@@ -23,10 +23,12 @@
 .content-details-main-info {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .content-details-main-company {
   font-size: 32px;
+  line-height: 32px;
   font-weight: 900;
 }
 
@@ -40,7 +42,21 @@
   font-weight: 700;
 }
 
-.content-details-section {
+.content-details-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.content-details-description {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.content-details-section-text {
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
@@ -53,4 +69,21 @@
   );
   border-radius: 12px;
   padding: 24px;
+}
+
+.content-details-section-image {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.content-details-image {
+  border-radius: 12px;
+  height: auto;
+  width: 250px;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }

@@ -10,14 +10,15 @@ function ContentDetails({ data }) {
         </div>
         <div className="content-details-main-date">{data.date}</div>
       </div>
-      <div className="content-details-section">
+      <div className="content-details-section-text">
         <div className="content-details-title">{"salkdjsalkdjsalkd"}</div>
         <div className="content-details-description">
           {"sdhasjldhasjdaskdha"}
         </div>
       </div>
-      <div className="content-details-section">s</div>
-      <div className="content-details-section">s</div>
+      <div className="content-details-section-image">
+        <img src={data.image} className="content-details-image" />
+      </div>
     </div>
   );
 }
