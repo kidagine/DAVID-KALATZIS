@@ -43,6 +43,7 @@
   flex-direction: column;
   box-sizing: border-box;
   gap: 42px;
+  padding-top: 32px;
 }
 
 .content-details-title {

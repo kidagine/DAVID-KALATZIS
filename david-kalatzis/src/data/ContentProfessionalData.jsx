@@ -10,10 +10,17 @@ export const professionalData = [
         section: [{ type: "_text", title: "hey", body: "akjdada" }],
       },
       {
-        section: [{ type: "_image", url: "hey" }],
+        section: [
+          {
+            type: "_image",
+            url: "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png",
+          },
+        ],
       },
       {
-        section: [{ type: "_video", url: "hey" }],
+        section: [
+          { type: "_video", url: "https://www.youtube.com/embed/tgbNymZ7vqY" },
+        ],
       },
     ],
   },
