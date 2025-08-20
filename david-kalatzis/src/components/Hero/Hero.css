@@ -4,11 +4,12 @@
   width: 100%;
   display: flex;
   align-items: flex-start;
-  gap: 32px;
+  gap: 16px;
   flex-direction: column;
   align-items: stretch;
   @media (min-width: 720px) {
     flex-direction: row;
+    gap: 32px;
   }
 }
 
@@ -41,7 +42,10 @@
   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     both;
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  font-size: 32px;
+  font-size: 24px;
+  @media (min-width: 720px) {
+    font-size: 32px;
+  }
   @media (min-width: 1080px) {
     font-size: 42px;
   }
