@@ -22,7 +22,10 @@
   padding: 32px 0px;
   margin-top: 32px;
   margin-bottom: 120px;
-  column-count: 3;
+  column-count: 2;
+  @media (min-width: 1080px) {
+    column-count: 3;
+  }
 }
 
 .fade-in {

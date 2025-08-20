@@ -1,20 +1,30 @@
 .hero {
   margin-top: 48px;
-  height: 200px;
+  min-height: 200px;
   width: 100%;
   display: flex;
   align-items: flex-start;
   gap: 32px;
+  flex-direction: column;
+  @media (min-width: 720px) {
+    flex-direction: row;
+  }
 }
 
 .hero-picture {
   pointer-events: none;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   border-radius: 16px;
   background-color: var(--white);
   flex-shrink: 0;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+  max-width: 150px;
+  max-height: 150px;
+  @media (min-width: 720px) {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }
 
 .hero-info-container {
@@ -25,13 +35,16 @@
 }
 
 .hero-name {
-  font-size: 42px;
   font-weight: 900;
   line-height: 36px;
   color: var(--black);
   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     both;
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  font-size: 32px;
+  @media (min-width: 1080px) {
+    font-size: 42px;
+  }
 }
 
 .hero-description-container {
@@ -42,12 +55,15 @@
 }
 
 .hero-description {
-  font-size: 18px;
   font-weight: 700;
   color: var(--black);
   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     both;
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  font-size: 14px;
+  @media (min-width: 1080px) {
+    font-size: 18px;
+  }
 }
 
 .hero-icons-containers {
