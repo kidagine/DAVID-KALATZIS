@@ -2,6 +2,5 @@ export const heroData = {
   name: "David Kalatzis",
   github: "https://github.com/kidagine",
   linkedin: "https://www.linkedin.com/in/davidkalatzis/",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.",
+  description: `I'm a developer with a degree and a wealth of work experience. Focused on bringing joyful moments through digitally interactive means, with a keen eye for a quality experience to all users.\n Located in Denmark working at LEGO.`,
 };

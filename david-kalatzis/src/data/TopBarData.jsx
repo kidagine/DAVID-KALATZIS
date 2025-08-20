@@ -1,9 +1,9 @@
 export const topBarData = {
   items: [
-    { label: "Professional", value: 0 },
-    { label: "Personal", value: 1 },
+    { label: "Work", value: 0 },
+    { label: "Projects", value: 1 },
     { label: "About", value: 2 },
   ],
-  contact: "Email Me!",
+  contact: "Contact",
   cv: "CV",
 };

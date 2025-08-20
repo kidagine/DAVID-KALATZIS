@@ -28,9 +28,12 @@
 
 .footer-text {
   color: var(--white);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 24px;
+  @media (min-width: 720px) {
+    font-size: 14px;
+  }
 }
 
 .footer-link {

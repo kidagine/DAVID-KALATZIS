@@ -3,8 +3,22 @@ import EmailIcon from "../../assets/svgs/Email.svg?react";
 import ArrowUpRightIcon from "../../assets/svgs/ArrowUpRight.svg?react";
 import HouseIcon from "../../assets/svgs/House.svg?react";
 import { topBarData } from "../../data/TopBarData";
+import { useState, useEffect } from "react";
 
 function TopBar({ isSticky, selectedValue, setSelectedValue }) {
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 720);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 720);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up listener on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 250,
@@ -18,11 +32,13 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
         <div
           className={`top-bar-inner-container ${isSticky ? "is-sticky" : ""}`}
         >
-          <div className="top-bar-item">
-            <div className="top-bar-home-container">
-              <HouseIcon className="top-bar-home-icon" />
+          {!isMobileView && (
+            <div className="top-bar-item">
+              <div className="top-bar-home-container">
+                <HouseIcon className="top-bar-home-icon" />
+              </div>
             </div>
-          </div>
+          )}
 
           <div className="top-bar-item">
             <div className="top-bar-selector-group">
@@ -49,25 +65,27 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
             </div>
           </div>
 
-          <div className="top-bar-item">
-            <div className="top-bar-buttons-container">
-              <div className={"top-bar-button-shadow"}>
-                <a
-                  href="mailto:davidkalatzis@gmail.com"
-                  className="top-bar-button top-bar-button-left"
-                >
-                  {topBarData.contact}
-                  <EmailIcon className="top-bar-button-icon" />
-                </a>
-              </div>
-              <div className={"top-bar-button-shadow"}>
-                <a className="top-bar-button top-bar-button-right">
-                  {topBarData.cv}
-                  <ArrowUpRightIcon className="top-bar-button-icon" />
-                </a>
+          {!isMobileView && (
+            <div className="top-bar-item">
+              <div className="top-bar-buttons-container">
+                <div className={"top-bar-button-shadow"}>
+                  <a
+                    href="mailto:davidkalatzis@gmail.com"
+                    className="top-bar-button top-bar-button-left"
+                  >
+                    {topBarData.contact}
+                    <EmailIcon className="top-bar-button-icon" />
+                  </a>
+                </div>
+                <div className={"top-bar-button-shadow"}>
+                  <a className="top-bar-button top-bar-button-right">
+                    {topBarData.cv}
+                    <ArrowUpRightIcon className="top-bar-button-icon" />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
