@@ -60,7 +60,7 @@ function Content({ images, onContentClick }) {
           </div>
           <div className="content-learn-more">
             <div>Learn More</div>
-            <ArrowRight className="content-learn-more-icon" />
+            {/* <ArrowRight className="content-learn-more-icon" /> */}
           </div>
         </div>
       ))}

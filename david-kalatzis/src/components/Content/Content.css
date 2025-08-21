@@ -75,9 +75,9 @@
   justify-content: space-between;
   width: 100%;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11px;
   @media (min-width: 720px) {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -89,10 +89,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 1000;
   transition: 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  text-shadow: 3px 3px 2px rgb(0, 0, 0);
   padding: 10px 0;
   width: 50%;
   margin: auto;
