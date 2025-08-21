@@ -103,7 +103,7 @@
 .hero-icon-container {
   width: auto;
   height: 28px;
-  &:hover {
+  &:hover .hero-icon {
     -webkit-animation: wobble-ver-left 0.65s both;
     animation: wobble-ver-left 0.65s both;
   }
