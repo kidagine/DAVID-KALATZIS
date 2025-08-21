@@ -90,7 +90,6 @@
   width: 100%;
   height: 40px;
   border-radius: 8px;
-  overflow: hidden;
 }
 
 .top-bar-selector-indicator {
@@ -107,6 +106,7 @@
     rgba(0, 0, 0, 1) 0%,
     rgb(45, 45, 45) 100%
   );
+  text-decoration: underline;
 }
 
 .top-bar-selector-button {
@@ -123,6 +123,7 @@
 
 .top-bar-selector-button.m--active {
   color: var(--white);
+  /* border-bottom: 4px solid #000; */
   cursor: default;
 }
 
