@@ -10,9 +10,12 @@
 }
 
 .footer-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+  height: 100%;
   padding: 0 15px;
   gap: 16px;
   @media (min-width: 720px) {
@@ -48,13 +51,22 @@
 
 .footer-up-nav {
   position: absolute;
-  bottom: 80px;
   background: var(--grey);
-  right: 0;
-  padding: 16px 16px;
+  bottom: 100%;
+  padding: 12px 12px 0px 12px;
   &:hover .footer-up-icon {
     -webkit-animation: pulsate-bck 0.8s ease-in-out infinite both;
     animation: pulsate-bck 0.8s ease-in-out infinite both;
+  }
+  right: 15px;
+  @media (min-width: 720px) {
+    right: 48px;
+  }
+  @media (min-width: 1080px) {
+    right: 72px;
+  }
+  @media (min-width: 1440px) {
+    right: 112px;
   }
 }
 
