@@ -31,9 +31,9 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
         >
           {!isMobileView && (
             <div className="top-bar-item">
-              <div className="top-bar-home-container">
+              {/* <div className="top-bar-home-container">
                 <HouseIcon className="top-bar-home-icon" />
-              </div>
+              </div> */}
             </div>
           )}
 
@@ -70,14 +70,14 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
                     href="mailto:davidkalatzis@gmail.com"
                     className="top-bar-button top-bar-button-left"
                   >
-                    {topBarData.contact}
+                    {/* {topBarData.contact} */}
                     <EmailIcon className="top-bar-button-icon" />
                   </a>
                 </div>
                 <div className={"top-bar-button-shadow"}>
                   <a className="top-bar-button top-bar-button-right">
                     {topBarData.cv}
-                    <ArrowUpRightIcon className="top-bar-button-icon" />
+                    {/* <ArrowUpRightIcon className="top-bar-button-icon" /> */}
                   </a>
                 </div>
               </div>
