@@ -12,10 +12,7 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
     const handleResize = () => {
       setIsMobileView(window.innerWidth < 720);
     };
-
     window.addEventListener("resize", handleResize);
-
-    // Clean up listener on unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 

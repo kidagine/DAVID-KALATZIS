@@ -6,8 +6,18 @@ import EmailIcon from "../../assets/svgs/Email.svg?react";
 import ArrowUpRightIcon from "../../assets/svgs/ArrowUpRight.svg?react";
 import { heroData } from "../../data/HeroData";
 import { topBarData } from "../../data/TopBarData";
+import { useState, useEffect } from "react";
 
 function Hero() {
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 720);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 720);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="hero">
       <div className="hero-picture-container">
@@ -17,19 +27,21 @@ function Hero() {
       <div className="hero-info-container">
         <div className="hero-name-container">
           <div className="hero-name">{heroData.name}</div>
-          <div className="hero-buttons-container">
-            <div className={"hero-button-shadow"}>
-              <a
-                href="mailto:davidkalatzis@gmail.com"
-                className="hero-button hero-button-left"
-              >
-                <EmailIcon className="hero-button-icon" />
-              </a>
+          {isMobileView && (
+            <div className="hero-buttons-container">
+              <div className={"hero-button-shadow"}>
+                <a
+                  href="mailto:davidkalatzis@gmail.com"
+                  className="hero-button hero-button-left"
+                >
+                  <EmailIcon className="hero-button-icon" />
+                </a>
+              </div>
+              <div className={"hero-button-shadow"}>
+                <a className="hero-button hero-button-right">{topBarData.cv}</a>
+              </div>
             </div>
-            <div className={"hero-button-shadow"}>
-              <a className="hero-button hero-button-right">{topBarData.cv}</a>
-            </div>
-          </div>
+          )}
         </div>
         <div className="hero-description-container">
           <div className="hero-description">{heroData.description}</div>
