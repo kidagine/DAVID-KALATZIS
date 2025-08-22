@@ -1,8 +1,7 @@
-import "./Content.css";
+import "./ContentPersonal.css";
 import { useEffect, useRef, useState } from "react";
-import ArrowRight from "../../assets/svgs/ArrowRight.svg?react";
 
-function Content({ images, onContentClick }) {
+function ContentPersonal({ images, onContentClick }) {
   const itemRefs = useRef([]);
   const [visibleItems, setVisibleItems] = useState([]);
 
@@ -68,4 +67,4 @@ function Content({ images, onContentClick }) {
   );
 }
 
-export default Content;
+export default ContentPersonal;

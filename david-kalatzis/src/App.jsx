@@ -1,6 +1,6 @@
 import "./App.css";
 import Hero from "./components/Hero/Hero";
-import Content from "./components/Content/Content";
+import Content from "./components/ContentPersonal/ContentPersonal";
 import Footer from "./components/Footer/Footer";
 import TopBar from "./components/TopBar/TopBar";
 import "./fonts.css";
@@ -9,6 +9,7 @@ import About from "./components/About/About";
 import { personalData } from "./data/ContentPersonalData";
 import { professionalData } from "./data/ContentProfessionalData";
 import ContentDetails from "./components/ContentDetails/ContentDetails";
+import ContentProfessional from "./components/ContentProfessional/ContentProfessional";
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -75,13 +76,21 @@ function App() {
               fadeOutContent ? "fade-out" : "fade-in"
             }`}
           >
-            <Content
-              images={selectedValue === 1 ? personalData : professionalData}
-              onContentClick={handleContentClick}
-            />
+            {selectedValue === 1 ? (
+              <Content
+                images={personalData}
+                onContentClick={handleContentClick}
+              />
+            ) : (
+              <ContentProfessional
+                images={professionalData}
+                onContentClick={handleContentClick}
+              />
+            )}
           </div>
         )}
       </div>
+
       <Footer />
     </div>
   );
