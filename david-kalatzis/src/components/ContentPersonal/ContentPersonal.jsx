@@ -32,7 +32,7 @@ function ContentPersonal({ images, onContentClick }) {
   }, [visibleItems]);
 
   return (
-    <div>
+    <div className="content-personal">
       {images.map((data, index) => (
         <div
           className={`content-item ${

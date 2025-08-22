@@ -3,7 +3,6 @@ import GithubIcon from "../../assets/svgs/Github.svg?react";
 import LinkedinIcon from "../../assets/svgs/Linkedin.svg?react";
 import ProfileImage from "../../assets/images/Profile.jpg";
 import EmailIcon from "../../assets/svgs/Email.svg?react";
-import ArrowUpRightIcon from "../../assets/svgs/ArrowUpRight.svg?react";
 import { heroData } from "../../data/HeroData";
 import { topBarData } from "../../data/TopBarData";
 import { useState, useEffect } from "react";

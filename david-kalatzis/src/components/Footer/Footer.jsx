@@ -1,4 +1,5 @@
 import "./Footer.css";
+import KidaImage from "../../assets/images/Face.png";
 import ArrowUpIcon from "../../assets/svgs/ArrowUp.svg?react";
 import { footerData } from "../../data/FooterData";
 
@@ -23,8 +24,8 @@ function Footer() {
           </div>
         </div>
         <div className="footer-up-nav-container">
-          <div className="footer-text">Heyo</div>
-          <div className="footer-text">Thnx for passing by~</div>
+          <img src={KidaImage} className="footer-picture" />
+          <div className="footer-text">Thnx for stopping by!</div>
         </div>
         <button className="footer-up-nav" onClick={scrollToTop}>
           <ArrowUpIcon className="footer-up-icon" />

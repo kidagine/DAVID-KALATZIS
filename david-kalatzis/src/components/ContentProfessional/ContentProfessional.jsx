@@ -32,7 +32,7 @@ function ContentProfessional({ images, onContentClick }) {
   }, [visibleItems]);
 
   return (
-    <div>
+    <div className="content-professional">
       {images.map((data, index) => (
         <div
           className={`content-item ${

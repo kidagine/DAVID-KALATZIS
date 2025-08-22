@@ -66,29 +66,28 @@ function App() {
         />
       </div>
       <div className="component-container" ref={contentRef}>
-        {selectedValue === 2 ? (
-          <About />
-        ) : selectedContentItem ? (
-          <ContentDetails data={selectedContentItem} />
-        ) : (
-          <div
-            className={`content-container ${
-              fadeOutContent ? "fade-out" : "fade-in"
-            }`}
-          >
-            {selectedValue === 1 ? (
-              <Content
-                images={personalData}
-                onContentClick={handleContentClick}
-              />
-            ) : (
-              <ContentProfessional
-                images={professionalData}
-                onContentClick={handleContentClick}
-              />
-            )}
-          </div>
-        )}
+        <div
+          className={`content-container ${
+            fadeOutContent ? "fade-out" : "fade-in"
+          }`}
+        >
+          {" "}
+          {selectedValue === 2 ? (
+            <About />
+          ) : selectedContentItem ? (
+            <ContentDetails data={selectedContentItem} />
+          ) : selectedValue === 1 ? (
+            <Content
+              images={personalData}
+              onContentClick={handleContentClick}
+            />
+          ) : (
+            <ContentProfessional
+              images={professionalData}
+              onContentClick={handleContentClick}
+            />
+          )}
+        </div>
       </div>
 
       <Footer />
