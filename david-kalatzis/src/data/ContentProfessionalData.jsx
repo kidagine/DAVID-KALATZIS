@@ -35,7 +35,7 @@ export const professionalData = [
   },
   {
     image:
-      "https://i.pinimg.com/736x/a7/28/be/a728be564049f0cc4425619858fa83f4.jpg",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2629170/ss_e62f29b00ed7c8f058539adf25eadfc2ee363c6a.1920x1080.jpg?t=1715706005",
     title: "Lead Game Programmer",
     company: "Inner Engine",
     time: "2023 - 2025",
