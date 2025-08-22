@@ -17,8 +17,8 @@
 }
 
 .content-container {
-  border-top: 2px solid #d3d3d3;
-  border-bottom: 2px solid #d3d3d3;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
   padding: 32px 0px;
   margin-top: 32px;
   margin-bottom: 120px;
@@ -36,4 +36,35 @@
 .fade-out {
   opacity: 0;
   transition: opacity 0.4s ease-out;
+}
+.scroll-background {
+  min-height: 100vh;
+  animation: scrollBackground 30s linear infinite;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.03) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(0, 0, 0, 0.03) 75%,
+      rgba(0, 0, 0, 0.03)
+    ),
+    linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.03) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(0, 0, 0, 0.03) 75%,
+      rgba(0, 0, 0, 0.03)
+    );
+  background-size: 80px 80px; /* bigger squares */
+  background-position: 0 0, 40px 40px; /* offset second layer */
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0, 40px 40px;
+  }
+  to {
+    background-position: 80px 80px, 120px 120px;
+  }
 }

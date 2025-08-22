@@ -1,6 +1,11 @@
 .footer {
   width: 100%;
-  background: var(--grey);
+  background: linear-gradient(
+    124deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 14%,
+    rgba(31, 31, 31, 1) 100%
+  );
   color: var(--white);
   height: 140px;
   display: flex;
@@ -51,7 +56,11 @@
 
 .footer-up-nav {
   position: absolute;
-  background: var(--grey);
+  background: linear-gradient(
+    124deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(31, 31, 31, 1) 60%
+  );
   bottom: 100%;
   padding: 12px 12px 0px 12px;
   &:hover .footer-up-icon {

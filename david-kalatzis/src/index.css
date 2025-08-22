@@ -13,23 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: #e6e6e6;
 }
-
-body {
+html,
+body,
+#root {
+  height: 100%;
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
-
 button {
   all: unset;
   display: inline-block;
   cursor: pointer;
-}
-
-body {
-  overflow: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }

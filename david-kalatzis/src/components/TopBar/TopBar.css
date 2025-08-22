@@ -150,12 +150,11 @@
   cursor: pointer;
   transition: outline 0.3s, color 0.3s;
   &:hover {
-    color: black;
-    fill: black;
+    color: #e4007c;
   }
 }
 .top-bar-button:hover .top-bar-button-icon {
-  fill: black;
+  fill: #00b4b4;
 }
 
 .top-bar-button-left {
