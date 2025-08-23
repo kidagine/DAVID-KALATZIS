@@ -1,22 +1,24 @@
+import darklings from "../assets/images/Darklings.png";
+import fullbody from "../assets/images/Fullbody.jpeg";
+import gummi from "../assets/images/Gummi.png";
+import hero from "../assets/images/Hero.png";
+
 export const personalData = [
   {
-    image:
-      "https://i.pinimg.com/1200x/3e/ff/31/3eff31835905d618fa69adef49923bdf.jpg",
+    image: darklings,
     title: "Custom netcode fighting game",
     date: "Unity | C#",
     company: "Darklings",
   },
   {
-    image:
-      "https://i.pinimg.com/736x/20/52/1d/20521ded456bdd1d2b15ca94637a50d9.jpg",
+    image: fullbody,
     title: "FPS IK controller",
     date: "Unity | C#",
     company: "Full-body awareness",
   },
   {
-    image:
-      "https://i.pinimg.com/736x/ab/dc/93/abdc93b33b06bcc57f2d9cb8781e8221.jpg",
-    title: "Open Platformer",
+    image: gummi,
+    title: "Open platformer demo",
     date: "Unity | C#",
     company: "Gummi",
   },
@@ -35,8 +37,7 @@ export const personalData = [
     company: "Specter",
   },
   {
-    image:
-      "https://i.pinimg.com/736x/3f/18/1f/3f181fb1d1e9b5f11a74b9492cbd23c8.jpg",
+    image: hero,
     title: "In development indie",
     date: "Unity | C#",
     company: "Project Hero",
