@@ -25,7 +25,7 @@ function App() {
       ([entry]) => {
         setIsSticky(!entry.isIntersecting);
       },
-      { threshold: 0 }
+      { threshold: 100 }
     );
     if (aboutRef.current) {
       observer.observe(aboutRef.current);
@@ -55,23 +55,20 @@ function App() {
       <div ref={aboutRef} className="component-container">
         <Hero />
       </div>
-      <div className="component-container">
-        <TopBar
-          isSticky={isSticky}
-          selectedValue={selectedValue}
-          setSelectedValue={(value) => {
-            setSelectedValue(value);
-            setSelectedContentItem(null);
-          }}
-        />
-      </div>
+      <TopBar
+        isSticky={isSticky}
+        selectedValue={selectedValue}
+        setSelectedValue={(value) => {
+          setSelectedValue(value);
+          setSelectedContentItem(null);
+        }}
+      />
       <div className="component-container" ref={contentRef}>
         <div
           className={`content-container ${
             fadeOutContent ? "fade-out" : "fade-in"
           }`}
         >
-          {" "}
           {selectedValue === 2 ? (
             <About />
           ) : selectedContentItem ? (

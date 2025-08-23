@@ -26,9 +26,7 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
   return (
     <div className={"top-bar-stuck"}>
       <div className={`top-bar ${isSticky ? "is-sticky" : ""}`}>
-        <div
-          className={`top-bar-inner-container ${isSticky ? "is-sticky" : ""}`}
-        >
+        <div className={`top-bar-inner-container`}>
           {!isMobileView && (
             <div className="top-bar-item">
               {/* <div className="top-bar-home-container">

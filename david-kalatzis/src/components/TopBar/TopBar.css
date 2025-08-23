@@ -1,5 +1,5 @@
 .top-bar-stuck {
-  margin-top: 32px;
+  padding-top: 32px;
   height: 72px;
   width: 100%;
 }
@@ -12,6 +12,7 @@
 }
 
 .top-bar.is-sticky {
+  transition: background-color 0.5s ease;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,9 +29,6 @@
   align-items: center;
   height: auto;
   justify-content: space-between;
-}
-
-.top-bar-inner-container.is-sticky {
   padding: 0 15px;
   @media (min-width: 720px) {
     padding: 0 48px;
