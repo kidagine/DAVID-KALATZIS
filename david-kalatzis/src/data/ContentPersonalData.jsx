@@ -80,6 +80,25 @@ export const personalData = [
     title: "In development indie",
     date: "Unity | C#",
     company: "Project Hero",
+    details: [
+      {
+        section: [
+          {
+            type: "_text",
+            title: "The Game",
+            body: "This is a more ambitious project working together with an artist to create a unique cozy adventure.",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_image",
+            url: hero,
+          },
+        ],
+      },
+    ],
   },
   {
     image: specter,

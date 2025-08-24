@@ -8,13 +8,16 @@ function ContentDetails({ data }) {
         <div className="content-details-main-info">
           <div className="content-details-main-group">
             <div className="content-details-main-company">{data.company}</div>
-            <a
-              className="content-details-link-icon-group"
-              href={data.url}
-              target="_blank"
-            >
-              <ArrowUpRightIcon className="content-details-link-icon" />
-            </a>
+            {data.url && (
+              <a
+                className="content-details-link-icon-group"
+                href={data.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ArrowUpRightIcon className="content-details-link-icon" />
+              </a>
+            )}
           </div>
           <div className="content-details-main-title">{data.title}</div>
         </div>
