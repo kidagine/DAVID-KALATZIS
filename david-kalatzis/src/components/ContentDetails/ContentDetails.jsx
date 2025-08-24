@@ -1,11 +1,21 @@
 import "./ContentDetails.css";
+import ArrowUpRightIcon from "../../assets/svgs/ArrowUpRight.svg?react";
 
 function ContentDetails({ data }) {
   return (
     <div className="content-details">
       <div className="content-details-main-section">
         <div className="content-details-main-info">
-          <div className="content-details-main-company">{data.company}</div>
+          <div className="content-details-main-group">
+            <div className="content-details-main-company">{data.company}</div>
+            <a
+              className="content-details-link-icon-group"
+              href={data.url}
+              target="_blank"
+            >
+              <ArrowUpRightIcon className="content-details-link-icon" />
+            </a>
+          </div>
           <div className="content-details-main-title">{data.title}</div>
         </div>
         <div className="content-details-main-date">{data.date}</div>

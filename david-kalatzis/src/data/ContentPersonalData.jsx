@@ -14,6 +14,26 @@ export const personalData = [
     title: "Custom netcode fighting game",
     date: "Unity | C#",
     company: "Darklings",
+    url: "https://education.lego.com/en-us/",
+    details: [
+      {
+        section: [
+          {
+            type: "_text",
+            title: "P2P Rollback Netcode:",
+            body: "The biggest complexity in this project is the custom rollback netcode, which is a from the ground-up made netcode inspired by GGPO. The game connects 2 users through NAT hole punching, in order to maintain the highest level of accuracy the algorithm will predict what the user will do before the action is received to the host, so things are always flowing, in case this is not accurate we roll-back to the previous state.",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_video",
+            url: "https://www.youtube.com/embed/ouh34A0fY4k?enablejsapi=1&version=3&playerapiid=ytplayer",
+          },
+        ],
+      },
+    ],
   },
   {
     image: fullbody,
