@@ -14,7 +14,7 @@ export const personalData = [
     title: "Custom netcode fighting game",
     date: "Unity | C#",
     company: "Darklings",
-    url: "https://education.lego.com/en-us/",
+    url: "https://github.com/kidagine/Darklings-FightingGame",
     details: [
       {
         section: [
@@ -40,6 +40,7 @@ export const personalData = [
     title: "FPS IK controller",
     date: "Unity | C#",
     company: "Full-body awareness",
+    url: "https://github.com/kidagine/FullBodyAwarenessFPS",
   },
 
   {
@@ -47,12 +48,14 @@ export const personalData = [
     title: "Games made in 2 days",
     date: "Unity | C#",
     company: "Game-Jam Projects",
+    url: "https://github.com/kidagine/Blite-GGJ2022/tree/349014b067f8418bf3b8c955863ab3718c899727",
   },
   {
     image: gummi,
     title: "Open platformer demo",
     date: "Unity | C#",
     company: "Gummi",
+    url: "https://github.com/kidagine/Gummi",
   },
   {
     image: hero,
@@ -65,6 +68,7 @@ export const personalData = [
     title: "Small game prototype",
     date: "Unity | C#",
     company: "Specter",
+    url: "https://github.com/kidagine/specter-unity",
   },
 
   // {
@@ -79,17 +83,20 @@ export const personalData = [
     title: "Tiny projects with pure C++",
     date: "C++ | SDL | OGL",
     company: "Open GL Projects",
+    url: "https://github.com/kidagine/Pancake-OpenGL",
   },
   {
     image: coma,
     title: "Winner project in Uni",
     date: "Unity | C#",
     company: "Coma",
+    url: "https://github.com/kidagine/coma",
   },
   {
     image: replicas,
     title: "Replicas of existing games",
     date: "Unity | C#",
     company: "Small Replicas",
+    url: "https://github.com/kidagine/MarioRunReplica",
   },
 ];
