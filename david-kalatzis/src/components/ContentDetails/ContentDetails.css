@@ -24,20 +24,20 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   background-color: white;
   border-radius: 16px;
+  &:hover .content-details-link-icon {
+    fill: var(--black);
+  }
 }
 
 .content-details-link-icon {
   fill: var(--light-grey);
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   transition: fill 0.3s;
-  &:hover {
-    fill: var(--black);
-  }
 }
 
 .content-details-main-company {
