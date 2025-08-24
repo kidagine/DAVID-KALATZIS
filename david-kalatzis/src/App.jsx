@@ -25,7 +25,7 @@ function App() {
       ([entry]) => {
         setIsSticky(!entry.isIntersecting);
       },
-      { threshold: 100 }
+      { threshold: 0 }
     );
     if (aboutRef.current) {
       observer.observe(aboutRef.current);
