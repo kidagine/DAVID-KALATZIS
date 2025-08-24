@@ -1,4 +1,5 @@
 import darklings from "../assets/images/Darklings.png";
+import darklings1 from "../assets/images/Darklings-1.png";
 import fullbody from "../assets/images/Fullbody.jpeg";
 import gummi from "../assets/images/Gummi.png";
 import hero from "../assets/images/Hero.png";
@@ -20,7 +21,7 @@ export const personalData = [
         section: [
           {
             type: "_text",
-            title: "P2P Rollback Netcode:",
+            title: "P2P Rollback Netcode",
             body: "The biggest complexity in this project is the custom rollback netcode, which is a from the ground-up made netcode inspired by GGPO. The game connects 2 users through NAT hole punching, in order to maintain the highest level of accuracy the algorithm will predict what the user will do before the action is received to the host, so things are always flowing, in case this is not accurate we roll-back to the previous state.",
           },
         ],
@@ -30,6 +31,23 @@ export const personalData = [
           {
             type: "_video",
             url: "https://www.youtube.com/embed/ouh34A0fY4k?enablejsapi=1&version=3&playerapiid=ytplayer",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_text",
+            title: "Results",
+            body: "The repository ended up getting fair amount of attention, and I received multiple emails since of people asking to use the project for their PhD and more.",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_image",
+            url: darklings1,
           },
         ],
       },
