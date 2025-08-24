@@ -59,6 +59,25 @@ export const personalData = [
     date: "Unity | C#",
     company: "Full-body awareness",
     url: "https://github.com/kidagine/FullBodyAwarenessFPS",
+    details: [
+      {
+        section: [
+          {
+            type: "_text",
+            title: "Inverse Kinematics",
+            body: "This project is a showcase of using IK(Inverse Kinematics) to adjust the model's skeleton dynamically to the environment",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_video",
+            url: "https://www.youtube.com/embed/H6c8IgWu1oM?enablejsapi=1",
+          },
+        ],
+      },
+    ],
   },
 
   {
@@ -86,7 +105,7 @@ export const personalData = [
           {
             type: "_text",
             title: "The Game",
-            body: "This is a more ambitious project working together with an artist to create a unique cozy adventure.",
+            body: "This is a more ambitious project working together with an artist to create a unique cozy adventure, though not a lot to share now.",
           },
         ],
       },
