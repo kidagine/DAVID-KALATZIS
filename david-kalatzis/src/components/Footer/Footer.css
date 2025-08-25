@@ -83,6 +83,7 @@
   &:hover .footer-up-icon {
     -webkit-animation: pulsate-bck 0.8s ease-in-out infinite both;
     animation: pulsate-bck 0.8s ease-in-out infinite both;
+    fill: #e4007c;
   }
   right: 15px;
   @media (min-width: 720px) {

@@ -34,7 +34,7 @@
 }
 
 .content-details-link-icon {
-  fill: var(--light-grey);
+  fill: #e4007c;
   width: 18px;
   height: 18px;
   transition: fill 0.3s;

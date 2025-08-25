@@ -1,7 +1,11 @@
+import lego1 from "../assets/images/Lego1.png";
+import lego2 from "../assets/images/Lego2.png";
+import lego3 from "../assets/images/Lego3.jpeg";
+import lego4 from "../assets/images/Lego4.png";
+
 export const professionalData = [
   {
-    image:
-      "https://i.pinimg.com/736x/87/60/46/876046238a2fadd46b9556d90bc3e07a.jpg",
+    image: lego1,
     title: "Frontend Developer",
     company: "LEGO",
     time: "2025 - Present",
@@ -14,7 +18,7 @@ export const professionalData = [
             title: "Contribution:",
             body:
               "Worked at the LEGO Education department of LEGO, heavily contributing to the website, by developing new pages and refining existing ones." +
-              " Collaborated with the rest of the dev team in the front and back end of things as well as designers to provide the playfulness and quality that LEGO is known for. You can view the website here: url",
+              " Collaborated with the rest of the dev team in the front and back end of things as well as designers to provide the playfulness and quality that LEGO is known for.",
           },
         ],
       },
@@ -22,13 +26,24 @@ export const professionalData = [
         section: [
           {
             type: "_image",
-            url: "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png",
+            url: lego4,
           },
         ],
       },
       {
         section: [
-          { type: "_video", url: "https://www.youtube.com/embed/tgbNymZ7vqY" },
+          {
+            type: "_image",
+            url: lego2,
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_image",
+            url: lego3,
+          },
         ],
       },
     ],
