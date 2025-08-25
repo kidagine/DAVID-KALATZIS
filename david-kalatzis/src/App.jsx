@@ -58,6 +58,7 @@ function App() {
       <TopBar
         isSticky={isSticky}
         selectedValue={selectedValue}
+        selectedContentItem={selectedContentItem}
         setSelectedValue={(value) => {
           setSelectedValue(value);
           setSelectedContentItem(null);

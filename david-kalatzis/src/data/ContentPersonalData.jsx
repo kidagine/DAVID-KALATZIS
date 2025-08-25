@@ -130,6 +130,25 @@ export const personalData = [
     date: "Unity | C#",
     company: "Gummi",
     url: "https://github.com/kidagine/Gummi",
+    details: [
+      {
+        section: [
+          {
+            type: "_text",
+            title: "Concept",
+            body: "A more advanced version of some of my simpler demos, this concept game comes down heavily to moment, and freedom in exploring, I ended up creating a lot of custom tools such as a level editor and much more!",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_video",
+            url: "https://www.youtube.com/embed/PeV9FP7Y5mA?enablejsapi=1",
+          },
+        ],
+      },
+    ],
   },
   {
     image: hero,

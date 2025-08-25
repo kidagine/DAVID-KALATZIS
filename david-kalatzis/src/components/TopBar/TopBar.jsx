@@ -5,7 +5,12 @@ import HouseIcon from "../../assets/svgs/House.svg?react";
 import { topBarData } from "../../data/TopBarData";
 import { useState, useEffect } from "react";
 
-function TopBar({ isSticky, selectedValue, setSelectedValue }) {
+function TopBar({
+  isSticky,
+  selectedValue,
+  setSelectedValue,
+  selectedContentItem,
+}) {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 720);
 
   useEffect(() => {
@@ -29,15 +34,17 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
         <div className={`top-bar-inner-container`}>
           {!isMobileView && (
             <div className="top-bar-item">
-              <div
-                className="top-bar-home-container"
-                onClick={() => {
-                  scrollToTop();
-                  setSelectedValue(selectedValue);
-                }}
-              >
-                <HouseIcon className="top-bar-home-icon" />
-              </div>
+              {selectedContentItem && (
+                <div
+                  className="top-bar-home-container"
+                  onClick={() => {
+                    scrollToTop();
+                    setSelectedValue(selectedValue);
+                  }}
+                >
+                  <HouseIcon className="top-bar-home-icon" />
+                </div>
+              )}
             </div>
           )}
 
