@@ -53,7 +53,7 @@ function ContentProfessional({ images, onContentClick }) {
               <div>{data.company}</div>
               <div className="content-info-details">
                 <div>{data.title}</div>
-                <div>{data.time}</div>
+                <div>{data.date}</div>
               </div>
             </div>
           </div>

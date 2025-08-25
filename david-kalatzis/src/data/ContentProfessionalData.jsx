@@ -2,6 +2,8 @@ import lego1 from "../assets/images/Lego1.png";
 import lego2 from "../assets/images/Lego2.png";
 import lego3 from "../assets/images/Lego3.jpeg";
 import lego4 from "../assets/images/Lego4.png";
+import freejack from "../assets/images/FreeJack.png";
+import aji from "../assets/images/AJI.png";
 
 export const professionalData = [
   {
@@ -58,24 +60,7 @@ export const professionalData = [
     ],
   },
   {
-    image:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2629170/ss_e62f29b00ed7c8f058539adf25eadfc2ee363c6a.1920x1080.jpg?t=1715706005",
-    title: "Lead Game Programmer",
-    company: "Inner Engine",
-    date: "2023 - 2025",
-    url: "https://store.steampowered.com/app/2629170/FreeJack_Online/",
-  },
-  {
-    image:
-      "https://i.pinimg.com/736x/0f/0b/51/0f0b514d4e3471edc35ee39669bd5001.jpg",
-    title: "Lead Engineer",
-    company: "Ampersand Associates",
-    date: "2022 - 2023",
-    url: "https://amper.dk/",
-  },
-  {
-    image:
-      "https://i.pinimg.com/1200x/15/b7/9e/15b79ed860dfc76c61496383c08d60cf.jpg",
+    image: aji,
     title: "Game Programmer Contractor",
     date: "2022-2023",
     company: "AJI Productions",
@@ -89,12 +74,27 @@ export const professionalData = [
     url: "https://oneirosvr.com/",
   },
   {
+    image: freejack,
+    title: "Lead Game Programmer",
+    company: "Inner Engine",
+    date: "2023 - 2025",
+    url: "https://store.steampowered.com/app/2629170/FreeJack_Online/",
+  },
+  {
     image:
       "https://i.pinimg.com/1200x/5b/7e/69/5b7e692586039c07614813d7bdf3b6dd.jpg",
     title: "Fullstack Developer Intern",
     company: "Grumsen Development",
     date: "2021",
     url: "https://grumsendev.dk/",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/0f/0b/51/0f0b514d4e3471edc35ee39669bd5001.jpg",
+    title: "Lead Engineer",
+    company: "Ampersand Associates",
+    date: "2022 - 2023",
+    url: "https://amper.dk/",
   },
   {
     image:
