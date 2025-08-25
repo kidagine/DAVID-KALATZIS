@@ -44,6 +44,7 @@ function ContentDetails({ data }) {
                     src={section.url}
                     alt="Detail"
                     className="content-details-image"
+                    loading="lazy"
                   />
                 </div>
               );
@@ -55,6 +56,7 @@ function ContentDetails({ data }) {
                     src={section.url}
                     allowFullScreen
                     title={`video-${index}`}
+                    loading="lazy"
                   ></iframe>
                 </div>
               );

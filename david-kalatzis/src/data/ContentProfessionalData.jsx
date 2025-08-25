@@ -8,6 +8,7 @@ import oneiros from "../assets/images/Oneiros.png";
 import ampersand from "../assets/images/Ampersand.png";
 import grumsen from "../assets/images/Grumsen.png";
 import amunet from "../assets/images/Amunet.png";
+import amunet1 from "../assets/images/Amunet1.png";
 
 export const professionalData = [
   {
@@ -68,6 +69,25 @@ export const professionalData = [
     title: "Game Programmer Contractor",
     date: "2022-2023",
     company: "AJI Productions",
+    details: [
+      {
+        section: [
+          {
+            type: "_text",
+            title: "Custom Cell Based Animation System",
+            body: "I was contracted undisclosed game, a lot of the information cannot be shared yet. I heavily contributed to a custom cell based animation system to allow fluid transitions between traditional animations.",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_image",
+            url: aji,
+          },
+        ],
+      },
+    ],
   },
   {
     image: freejack,
@@ -75,6 +95,25 @@ export const professionalData = [
     company: "Inner Engine",
     date: "2023 - 2025",
     url: "https://store.steampowered.com/app/2629170/FreeJack_Online/",
+    details: [
+      {
+        section: [
+          {
+            type: "_text",
+            title: "FreeJack Online",
+            body: "I was the main programmer for a game called FreeJack Online, which can be found on Steam, a racing multiplayer game with parkour elements. Worked heavily on the physics and central mechanics of the game, as well as the multiplayer base to allow players to race together smoothly despite any connection hurdles.",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_video",
+            url: "https://www.youtube.com/embed/RNU7E6ziloI?enablejsapi=1",
+          },
+        ],
+      },
+    ],
   },
   {
     image: oneiros,
@@ -116,6 +155,49 @@ export const professionalData = [
         section: [
           {
             type: "_text",
+            title: "Amper App",
+            body: "An app developed in Unity for iOS, Android and Web, with AR & Addressables functionality, letting users scan cards to gain further insight, and maintain information on methodologies, in an accessible and compact manner.",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_video",
+            url: "https://www.youtube.com/embed/3k3EDoz13SY?enablejsapi=1",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_text",
+            title: "Scrum Noire",
+            body: "A game used as a teaching resource to help explain the SCRUM process in a more digestible and joyful way, using Unity",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_video",
+            url: "https://www.youtube.com/embed/12Zkbt5zNKA?enablejsapi=1",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    image: grumsen,
+    title: "Fullstack Developer Intern",
+    company: "Grumsen Development",
+    date: "2021",
+    url: "https://grumsendev.dk/",
+    details: [
+      {
+        section: [
+          {
+            type: "_text",
             title: "Contribution:",
             body:
               "Worked at the LEGO Education department of LEGO, heavily contributing to the website, by developing new pages and refining existing ones." +
@@ -134,17 +216,29 @@ export const professionalData = [
     ],
   },
   {
-    image: grumsen,
-    title: "Fullstack Developer Intern",
-    company: "Grumsen Development",
-    date: "2021",
-    url: "https://grumsendev.dk/",
-  },
-  {
     image: amunet,
     title: "Game Engineer Intern",
     company: "Amunet Studio",
     date: "2020",
     url: "https://www.amunetstudio.com/",
+    details: [
+      {
+        section: [
+          {
+            type: "_text",
+            title: "Virtual Film-making",
+            body: "During my time at Amunet Studio I developed internal tools in Unreal Engine to enhance the process a film-maker has to go through, by giving them an app that connects to the virtual world and allows them to play with any camera, light and post processing effect in real-time.",
+          },
+        ],
+      },
+      {
+        section: [
+          {
+            type: "_image",
+            url: amunet1,
+          },
+        ],
+      },
+    ],
   },
 ];

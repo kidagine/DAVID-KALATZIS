@@ -47,6 +47,7 @@ function ContentPersonal({ images, onContentClick }) {
             src={data.image}
             alt={`content image ${index + 1}`}
             className="content-image"
+            loading="lazy"
           />
           <div className="content-info">
             <div className="content-info-inner">
