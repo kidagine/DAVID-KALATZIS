@@ -22,7 +22,7 @@ export const professionalData = [
         section: [
           {
             type: "_text",
-            title: "Contribution:",
+            title: "Contribution",
             body:
               "Worked at the LEGO Education department of LEGO, heavily contributing to the website, by developing new pages and refining existing ones." +
               " Collaborated with the rest of the dev team in the front and back end of things as well as designers to provide the playfulness and quality that LEGO is known for.",
@@ -41,7 +41,7 @@ export const professionalData = [
         section: [
           {
             type: "_text",
-            title: "Contribution:",
+            title: "Examples",
             body: "Following are a few screenshot examples of some of the pages which I contributed to, such as the product details page, and the pages that give overview of some of the new products such as Wave and STEAM.",
           },
         ],

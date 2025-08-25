@@ -29,9 +29,15 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
         <div className={`top-bar-inner-container`}>
           {!isMobileView && (
             <div className="top-bar-item">
-              {/* <div className="top-bar-home-container">
+              <div
+                className="top-bar-home-container"
+                onClick={() => {
+                  scrollToTop();
+                  setSelectedValue(selectedValue);
+                }}
+              >
                 <HouseIcon className="top-bar-home-icon" />
-              </div> */}
+              </div>
             </div>
           )}
 
