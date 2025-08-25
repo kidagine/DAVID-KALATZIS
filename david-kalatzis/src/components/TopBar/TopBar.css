@@ -86,11 +86,11 @@
 
 .top-bar-selector-indicator {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 33.33%;
-  height: 100%;
-  border-radius: 16px;
+  border-bottom: 4px solid #000;
+  border-radius: 11216px;
   transition: transform 0.3s ease;
   z-index: 0;
   background: linear-gradient(
@@ -114,9 +114,18 @@
 }
 
 .top-bar-selector-button.m--active {
-  color: var(--white);
+  color: var(--black);
   pointer-events: none;
   cursor: default;
+}
+
+.top-bar-selector-button.m--active-item {
+  color: var(--light-grey);
+  pointer-events: all;
+  cursor: pointer;
+  &:hover {
+    color: var(--black);
+  }
 }
 
 .top-bar-buttons-container {

@@ -34,7 +34,7 @@ function TopBar({
         <div className={`top-bar-inner-container`}>
           {!isMobileView && (
             <div className="top-bar-item">
-              {selectedContentItem && (
+              {/* {selectedContentItem && (
                 <div
                   className="top-bar-home-container"
                   onClick={() => {
@@ -44,7 +44,7 @@ function TopBar({
                 >
                   <HouseIcon className="top-bar-home-icon" />
                 </div>
-              )}
+              )} */}
             </div>
           )}
 
@@ -63,7 +63,11 @@ function TopBar({
                       setSelectedValue(item.value);
                     }}
                     className={`top-bar-selector-button ${
-                      selectedValue === item.value ? "m--active" : ""
+                      selectedValue === item.value
+                        ? selectedContentItem
+                          ? "m--active-item"
+                          : "m--active"
+                        : ""
                     }`}
                   >
                     {item.label}
