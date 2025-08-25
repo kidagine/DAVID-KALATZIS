@@ -126,10 +126,8 @@ export const professionalData = [
         section: [
           {
             type: "_text",
-            title: "Contribution:",
-            body:
-              "Worked at the LEGO Education department of LEGO, heavily contributing to the website, by developing new pages and refining existing ones." +
-              " Collaborated with the rest of the dev team in the front and back end of things as well as designers to provide the playfulness and quality that LEGO is known for.",
+            title: "VR & Cloud rendering",
+            body: "I was contracted to develop a port of a VR only furniture shop application, and tools for rendering assets through the cloud, allowing users with low end hardware to view photorealistic sets.",
           },
         ],
       },
@@ -198,18 +196,16 @@ export const professionalData = [
         section: [
           {
             type: "_text",
-            title: "Contribution:",
-            body:
-              "Worked at the LEGO Education department of LEGO, heavily contributing to the website, by developing new pages and refining existing ones." +
-              " Collaborated with the rest of the dev team in the front and back end of things as well as designers to provide the playfulness and quality that LEGO is known for.",
+            title: "Customer based Website",
+            body: "I worked together with the engineering team on a customer tailored website, building the API in .NET from scratch and React site with Server side rendering. The site itself cannot be shown as it is privately owned :/",
           },
         ],
       },
       {
         section: [
           {
-            type: "_video",
-            url: "https://www.youtube.com/embed/5kc4tkuaiDI?enablejsapi=1",
+            type: "_image",
+            url: grumsen,
           },
         ],
       },
