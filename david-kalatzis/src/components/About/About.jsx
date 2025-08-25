@@ -43,7 +43,7 @@ function About() {
                     </a>
                   </div>
                 </div>
-                <div className="about-me-description">{item.time}</div>
+                <div className="about-me-description">{item.date}</div>
               </div>
             ))}
           </div>
