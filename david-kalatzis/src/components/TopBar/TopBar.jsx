@@ -73,7 +73,11 @@ function TopBar({ isSticky, selectedValue, setSelectedValue }) {
                   </a>
                 </div>
                 <div className={"top-bar-button-shadow"}>
-                  <a className="top-bar-button top-bar-button-right">
+                  <a
+                    target="_blank"
+                    href="https://docs.google.com/document/d/1_o9YiMt5UYPE9ubD9THiW3or6f3LpHHuBQJDC96R96g/edit?usp=sharing"
+                    className="top-bar-button top-bar-button-right"
+                  >
                     {topBarData.cv}
                     {/* <ArrowUpRightIcon className="top-bar-button-icon" /> */}
                   </a>
